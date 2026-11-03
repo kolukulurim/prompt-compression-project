@@ -1,0 +1,58 @@
+# ---- Model weights & checkpoints (too large for git) ----
+models/
+checkpoints/
+outputs/
+# results/: keep the experiment report and per-run summaries, ignore the large answer caches
+results/*
+!results/experiments.csv
+!results/runs/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.onnx
+*.gguf
+*.h5
+*.joblib
+*.pkl
+*.pickle
+
+# ---- Training logs / experiment tracking ----
+/runs/
+logs/
+wandb/
+mlruns/
+lightning_logs/
+
+# ---- Large / cached data (HotpotQA is re-downloadable via `datasets`) ----
+.cache/
+hf_cache/
+*.arrow
+*.parquet
+data/raw/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Secrets ----
+.env
+*.token
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Excel lock files created while a workbook is open
+~$*.xlsx
