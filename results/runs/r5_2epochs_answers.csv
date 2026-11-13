@@ -40,7 +40,7 @@ full,5abec25e5542997ec76fd35b,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,969,20th Cen
 full,5ae6983d5542996d980e7c30,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,2012,Continental Navy,Provincial Congress of the Province of Massachusetts Bay,bridge,0.0,0.0,0.0,0.0,,False,False
 full,5a7a8bf955429941d65f269c,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1700,Eastside Canal,Eastside Canal,comparison,1.0,1.0,1.0,0.0,1.0,False,False
 full,5ab5c3ec554299494045f059,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1316,2,two,bridge,0.0,0.0,0.0,0.0,,False,False
-full,5ac033605542997d642959e2,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1200,Actors and directors,director,comparison,0.0,0.0,0.0,0.0,,False,False
+full,5ac033605542997d642959e2,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1200,Actors,director,comparison,0.0,0.0,0.0,0.0,,False,False
 full,5a7b4073554299042af8f733,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1768,He did not play due to a leg injury,leg injury,bridge,0.0,0.4,0.0,0.0,,False,False
 full,5ab6840c55429954757d331f,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1353,habitat loss,habitat loss,bridge,1.0,1.0,1.0,0.0,1.0,False,False
 full,5a89b8f1554299669944a581,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1746,Yes,no,comparison,0.0,0.0,0.0,0.0,,False,False
@@ -137,7 +137,7 @@ full,5a71335e5542994082a3e65d,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1354,Simona 
 full,5a7b8a8a554299042af8f77d,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1772,Nickelodeon,Nickelodeon,bridge,1.0,1.0,1.0,0.0,1.0,False,False
 full,5a7ded185542995f4f402312,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1200,A Holy Terror,Strangers with Candy,bridge,0.0,0.0,0.0,0.0,,False,False
 full,5a851cdb5542997175ce1f86,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1953,Arecibo Observatory,Arecibo Observatory,bridge,1.0,1.0,1.0,0.0,1.0,False,False
-full,5ac3a5b6554299391541387c,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1040,The Kid in a Candy Store series follows the host of The Gospel Bill Show,FX Movie Download,bridge,0.0,0.0,0.0,0.0,,False,False
+full,5ac3a5b6554299391541387c,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1040,"The Kid in a Candy Store series follows the host of ""The Gospel Bill Show""",FX Movie Download,bridge,0.0,0.0,0.0,0.0,,False,False
 full,5a89b1bf5542992e4fca8377,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1277,Erase Errata,Erase Errata,comparison,1.0,1.0,1.0,0.0,1.0,False,False
 full,5ac3037855429921a00ab0d8,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1003,7800,7800,bridge,1.0,1.0,1.0,0.0,1.0,False,False
 full,5a777e3855429949eeb29e7e,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1935,Massive Attack,Violent Femmes,comparison,0.0,0.0,0.0,0.0,,False,False
@@ -216,7 +216,7 @@ full,5ae4a3975542995ad6573dec,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1125,Life as
 full,5a8b499355429949d91db52d,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,986,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.0,,False,False
 full,5ac3fd0755429919431738ee,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1285,"""American Lion: Andrew Jackson in the White House""",American Lion,bridge,0.0,0.4444444444444445,0.0,0.0,,False,False
 full,5add12c45542994ed6169c60,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,963,Ubeda Gym,Ubeda Gym,bridge,1.0,1.0,1.0,0.0,1.0,False,False
-full,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3, 4]",True,673,"Ahmedabad, Gujarat, India","Ahmedabad, Gujarat, India",bridge,1.0,1.0,1.0,0.0,1.0,False,False
+full,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3, 4]",True,673,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.0,,False,False
 full,5ab29649554299194fa93413,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,2304,Daniel Day-Lewis,Daniel Day-Lewis,bridge,1.0,1.0,1.0,0.0,1.0,False,False
 full,5a7a572155429941d65f25c0,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1409,Ball Brothers,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.0,,False,False
 full,5abbb6e25542996606241724,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,1636,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.0,1.0,False,False
@@ -516,7 +516,7 @@ oracle,5ae4a3975542995ad6573dec,"[0, 2]",True,225,no,Life as We Know It,bridge,0
 oracle,5a8b499355429949d91db52d,"[3, 7]",True,248,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.7484787018255579,,False,False
 oracle,5ac3fd0755429919431738ee,"[5, 8]",True,289,American Lion,American Lion,bridge,1.0,1.0,0.0,0.7750972762645915,,True,False
 oracle,5add12c45542994ed6169c60,"[3, 9]",True,265,Ubeda Gym,Ubeda Gym,bridge,1.0,1.0,1.0,0.7248182762201454,1.0,False,False
-oracle,5a7ba8ef554299294a54aa6f,"[0, 2]",True,297,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,1.0,0.5586924219910847,0.0,False,True
+oracle,5a7ba8ef554299294a54aa6f,"[0, 2]",True,297,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.5586924219910847,,False,False
 oracle,5ab29649554299194fa93413,"[2, 8]",True,300,Daniel Day-Lewis,Daniel Day-Lewis,bridge,1.0,1.0,1.0,0.8697916666666666,1.0,False,False
 oracle,5a7a572155429941d65f25c0,"[2, 4]",True,374,Ball Brothers,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.7345635202271115,,False,False
 oracle,5abbb6e25542996606241724,"[1, 2]",True,328,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.7995110024449877,1.0,False,False
@@ -597,7 +597,7 @@ oracle,5ae3d0f55542990afbd1e1e6,"[2, 9]",True,347,Baby Driver,Baby Driver,bridge
 oracle,5a76d6c95542994aec3b7185,"[4, 7]",True,215,alcoholic,alcoholic,comparison,1.0,1.0,0.0,0.8484848484848485,,True,False
 oracle,5a87108855429960ec39b721,"[2, 6]",True,287,Film industry,film industry,bridge,1.0,1.0,0.0,0.7523727351164797,,True,False
 oracle,5ac31b50554299741d48a1f4,"[1, 6]",True,314,Figaro,Figaro,bridge,1.0,1.0,0.0,0.844400396432111,,True,False
-oracle,5a8036fa5542996402f6a481,"[8, 9]",True,316,no,Dog,comparison,0.0,0.0,0.0,0.8272279934390377,,False,False
+oracle,5a8036fa5542996402f6a481,"[8, 9]",True,316,Molossian-type,Dog,comparison,0.0,0.0,0.0,0.8272279934390377,,False,False
 oracle,5adf35875542995ec70e8f92,"[0, 7]",True,248,Nick Jr. Australia,Foxtel Networks,bridge,0.0,0.0,0.0,0.788756388415673,,False,False
 random@1,5abc3ce45542993a06baf8a4,[5],False,398,no,Minneapolis,bridge,0.0,0.0,1.0,0.8012980529206191,0.0,False,True
 random@1,5a77b03255429949eeb29f35,[8],False,202,2007,2007,bridge,1.0,1.0,1.0,0.8537291817523533,1.0,False,False
@@ -750,7 +750,7 @@ random@1,5a905cda55429933b8a204f3,[4],False,174,no,The Truth Beneath,bridge,0.0,
 random@1,5a8f902e55429918e830d266,[3],False,156,no,Industry Icon,bridge,0.0,0.0,0.0,0.8115942028985508,,False,False
 random@1,5a8ec7b855429917b4a5bdc3,[2],False,219,no,Anderson County,bridge,0.0,0.0,0.0,0.8301008533747091,,False,False
 random@1,5ab3953f55429969a97a8185,[5],False,272,No,Jamie Chung,bridge,0.0,0.0,1.0,0.7909300538047656,0.0,False,True
-random@1,5a7b51975542992d025e67f9,[8],False,293,Epcot,Walt Disney World Resort,bridge,0.0,0.0,0.0,0.7970914127423823,,False,False
+random@1,5a7b51975542992d025e67f9,[8],False,293,Future World,Walt Disney World Resort,bridge,0.0,0.3333333333333333,0.0,0.7970914127423823,,False,False
 random@1,5abdca7255429965af743e4b,[4],False,278,UFC,Ultimate Fighting Championship,bridge,0.0,0.0,0.0,0.7119170984455958,,False,False
 random@1,5a7a9cea5542990198eaf162,[2],False,280,no,Ayn Rand,bridge,0.0,0.0,1.0,0.7945707997065297,0.0,False,True
 random@1,5abc5c44554299700f9d788a,[6],False,186,no,St Mark's Square,bridge,0.0,0.0,1.0,0.8748317631224765,0.0,False,True
@@ -816,7 +816,7 @@ random@1,5ae4a3975542995ad6573dec,[4],False,207,no,Life as We Know It,bridge,0.0
 random@1,5a8b499355429949d91db52d,[6],False,159,no,Michael Wolff,bridge,0.0,0.0,0.0,0.8387423935091278,,False,False
 random@1,5ac3fd0755429919431738ee,[9],False,234,No,American Lion,bridge,0.0,0.0,0.0,0.8178988326848249,,False,False
 random@1,5add12c45542994ed6169c60,[2],False,233,no,Ubeda Gym,bridge,0.0,0.0,1.0,0.7580477673935617,0.0,False,True
-random@1,5a7ba8ef554299294a54aa6f,[0],False,137,Adani Group,"Ahmedabad, Gujarat, India",bridge,0.0,0.0,1.0,0.7964338781575038,0.0,False,True
+random@1,5a7ba8ef554299294a54aa6f,[0],False,137,Adani Group,"Ahmedabad, Gujarat, India",bridge,0.0,0.0,0.0,0.7964338781575038,,False,False
 random@1,5ab29649554299194fa93413,[3],False,644,no,Daniel Day-Lewis,bridge,0.0,0.0,1.0,0.7204861111111112,0.0,False,True
 random@1,5a7a572155429941d65f25c0,[7],False,178,Ball,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.8736692689850958,,False,False
 random@1,5abbb6e25542996606241724,[7],False,233,Dave Thomas,Wendy's,bridge,0.0,0.0,1.0,0.8575794621026895,0.0,False,True
@@ -864,7 +864,7 @@ random@1,5ab5306955429942dd41601a,[8],False,183,no,anti-drug program,bridge,0.0,
 random@1,5ae52ea75542990ba0bbb1ed,[2],False,239,1905,1904,bridge,0.0,0.0,0.0,0.8040983606557377,,False,False
 random@1,5aba5ea955429939ce03dca5,[8],False,251,Canopus in Argos: Archives,Chronicles of Barsetshire,bridge,0.0,0.0,1.0,0.775692582663092,0.0,False,True
 random@1,5a8b3d1855429949d91db4fe,[2],False,295,Auckland,"Atlanta, Georgia",bridge,0.0,0.0,0.0,0.805921052631579,,False,False
-random@1,5a8bd6275542997f31a41ddb,[0],False,159,no,yes,comparison,0.0,0.0,0.0,0.8715670436187399,,False,False
+random@1,5a8bd6275542997f31a41ddb,[0],False,159,No,yes,comparison,0.0,0.0,0.0,0.8715670436187399,,False,False
 random@1,5ac23d545542994d76dccefd,[6],False,262,no,India,bridge,0.0,0.0,1.0,0.8572984749455338,0.0,False,True
 random@1,5abc8a0e554299114383a143,[3],False,317,no,Jalen Rose,bridge,0.0,0.0,1.0,0.8259198242723778,0.0,False,True
 random@1,5a8681ef5542996432c571ce,[6],False,247,no,Pennsylvania,bridge,0.0,0.0,1.0,0.8298898071625345,0.0,False,True
@@ -1116,7 +1116,7 @@ bm25@1,5ae4a3975542995ad6573dec,[2],False,184,Life As We Know It,Life as We Know
 bm25@1,5a8b499355429949d91db52d,[7],False,187,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.8103448275862069,,False,False
 bm25@1,5ac3fd0755429919431738ee,[5],False,181,American Lion,American Lion,bridge,1.0,1.0,0.0,0.8591439688715954,,True,False
 bm25@1,5add12c45542994ed6169c60,[3],False,152,no,Ubeda Gym,bridge,0.0,0.0,1.0,0.8421599169262721,0.0,False,True
-bm25@1,5a7ba8ef554299294a54aa6f,[0],False,137,Adani Group,"Ahmedabad, Gujarat, India",bridge,0.0,0.0,1.0,0.7964338781575038,0.0,False,True
+bm25@1,5a7ba8ef554299294a54aa6f,[0],False,137,Adani Group,"Ahmedabad, Gujarat, India",bridge,0.0,0.0,0.0,0.7964338781575038,,False,False
 bm25@1,5ab29649554299194fa93413,[2],False,196,No,Daniel Day-Lewis,bridge,0.0,0.0,1.0,0.9149305555555556,0.0,False,True
 bm25@1,5a7a572155429941d65f25c0,[4],False,179,Ball Brothers,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.8729595457771469,,False,False
 bm25@1,5abbb6e25542996606241724,[1],False,246,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.8496332518337408,1.0,False,False
@@ -1416,7 +1416,7 @@ minilm@1,5ae4a3975542995ad6573dec,[0],False,152,no,Life as We Know It,bridge,0.0
 minilm@1,5a8b499355429949d91db52d,[3],False,183,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.8144016227180527,,False,False
 minilm@1,5ac3fd0755429919431738ee,[5],False,181,American Lion,American Lion,bridge,1.0,1.0,0.0,0.8591439688715954,,True,False
 minilm@1,5add12c45542994ed6169c60,[3],False,152,no,Ubeda Gym,bridge,0.0,0.0,1.0,0.8421599169262721,0.0,False,True
-minilm@1,5a7ba8ef554299294a54aa6f,[0],False,137,Adani Group,"Ahmedabad, Gujarat, India",bridge,0.0,0.0,1.0,0.7964338781575038,0.0,False,True
+minilm@1,5a7ba8ef554299294a54aa6f,[0],False,137,Adani Group,"Ahmedabad, Gujarat, India",bridge,0.0,0.0,0.0,0.7964338781575038,,False,False
 minilm@1,5ab29649554299194fa93413,[8],False,210,Daniel Day-Lewis,Daniel Day-Lewis,bridge,1.0,1.0,1.0,0.9088541666666666,1.0,False,False
 minilm@1,5a7a572155429941d65f25c0,[4],False,179,Ball Brothers,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.8729595457771469,,False,False
 minilm@1,5abbb6e25542996606241724,[1],False,246,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.8496332518337408,1.0,False,False
@@ -1530,7 +1530,7 @@ random@2,5ac170fd55429964131be1fe,"[3, 8]",False,336,[1],"Paris, France",bridge,
 random@2,5a7cf6d7554299683c1c63f4,"[0, 2]",False,415,2011,2004,bridge,0.0,0.0,1.0,0.6834477498093059,0.0,False,True
 random@2,5ab7ceb555429928e1fe3917,"[2, 8]",False,506,no,magazine,comparison,0.0,0.0,0.0,0.7634408602150538,,False,False
 random@2,5ae1dc6c5542997283cd22a5,"[5, 8]",False,409,no,Sonny Seiler,bridge,0.0,0.0,1.0,0.7242076871207013,0.0,False,True
-random@2,5a80899e554299485f598646,"[0, 2]",False,383,2008,1 July 1997,bridge,0.0,0.0,0.0,0.685032894736842,,False,False
+random@2,5a80899e554299485f598646,"[0, 2]",False,383,2005,1 July 1997,bridge,0.0,0.0,0.0,0.685032894736842,,False,False
 random@2,5a73f9485542993e948e87a6,"[2, 5]",False,353,no,2016,bridge,0.0,0.0,0.0,0.6187904967602591,,False,False
 random@2,5a795670554299148911fa2d,"[6, 7]",False,411,High Times,High Times,comparison,1.0,1.0,1.0,0.7313725490196079,1.0,False,False
 random@2,5a8094a35542995d8a8ddfa4,"[7, 9]",False,247,Mark Shuttleworth,Mark Richard Shuttleworth,comparison,0.0,0.8,0.0,0.763183125599233,,False,False
@@ -1716,7 +1716,7 @@ random@2,5ae4a3975542995ad6573dec,"[5, 8]",False,207,No,Life as We Know It,bridg
 random@2,5a8b499355429949d91db52d,"[1, 6]",False,235,Marini,Michael Wolff,bridge,0.0,0.0,0.0,0.7616632860040569,,False,False
 random@2,5ac3fd0755429919431738ee,"[1, 3]",False,348,No,American Lion,bridge,0.0,0.0,0.0,0.729182879377432,,False,False
 random@2,5add12c45542994ed6169c60,"[0, 6]",False,264,No,Ubeda Gym,bridge,0.0,0.0,1.0,0.7258566978193146,0.0,False,True
-random@2,5a7ba8ef554299294a54aa6f,"[3, 4]",False,352,"Monterrey, Mexico","Ahmedabad, Gujarat, India",bridge,0.0,0.0,1.0,0.47696879643387813,0.0,False,True
+random@2,5a7ba8ef554299294a54aa6f,"[3, 4]",False,352,"Monterrey, Mexico","Ahmedabad, Gujarat, India",bridge,0.0,0.0,0.0,0.47696879643387813,,False,False
 random@2,5ab29649554299194fa93413,"[1, 2]",False,336,no,Daniel Day-Lewis,bridge,0.0,0.0,1.0,0.8541666666666666,0.0,False,True
 random@2,5a7a572155429941d65f25c0,"[1, 9]",False,219,no,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.8445706174591909,,False,False
 random@2,5abbb6e25542996606241724,"[1, 2]",True,328,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.7995110024449877,1.0,False,False
@@ -1994,7 +1994,7 @@ bm25@2,5add3a455542992ae4cec4fe,"[2, 7]",False,305,Nalco Company,"St. Paul, Minn
 bm25@2,5a8b002155429950cd6afc3e,"[2, 6]",False,421,2013,"February 12, 1970",bridge,0.0,0.0,1.0,0.7695675971538041,0.0,False,True
 bm25@2,5a77c75a5542995d831812ca,"[1, 3]",False,490,Santaolalla,Gustavo Alfredo Santaolalla,bridge,0.0,0.5,0.0,0.6950840074673305,,False,False
 bm25@2,5a82096455429926c1cdadf8,"[6, 8]",False,264,David Mitchell and Micky Flanagan,Mitchell and Webb,bridge,0.0,0.5,0.0,0.8315252074026803,,False,False
-bm25@2,5a85f67e5542996432c57148,"[0, 6]",False,295,Time Warner,Turner Broadcasting System,bridge,0.0,0.0,1.0,0.7947112038970077,0.0,False,True
+bm25@2,5a85f67e5542996432c57148,"[0, 6]",False,295,Turner Broadcasting System,Turner Broadcasting System,bridge,1.0,1.0,1.0,0.7947112038970077,1.0,False,False
 bm25@2,5a713b325542994082a3e6b5,"[1, 6]",False,404,Agra,Agra,bridge,1.0,1.0,0.0,0.6731391585760518,,True,False
 bm25@2,5ac42446554299204fd21efb,"[2, 6]",True,385,STANCA,STANCA,bridge,1.0,1.0,1.0,0.7317073170731707,1.0,False,False
 bm25@2,5adf75df5542995ec70e901b,"[2, 9]",True,345,Jodelle Ferland,Lillith Sullivan,bridge,0.0,0.0,0.0,0.680259499536608,,False,False
@@ -2016,7 +2016,7 @@ bm25@2,5ae4a3975542995ad6573dec,"[0, 2]",True,225,no,Life as We Know It,bridge,0
 bm25@2,5a8b499355429949d91db52d,"[3, 7]",True,248,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.7484787018255579,,False,False
 bm25@2,5ac3fd0755429919431738ee,"[5, 8]",True,289,American Lion,American Lion,bridge,1.0,1.0,0.0,0.7750972762645915,,True,False
 bm25@2,5add12c45542994ed6169c60,"[0, 3]",False,214,no,Ubeda Gym,bridge,0.0,0.0,1.0,0.7777777777777778,0.0,False,True
-bm25@2,5a7ba8ef554299294a54aa6f,"[0, 2]",True,297,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,1.0,0.5586924219910847,0.0,False,True
+bm25@2,5a7ba8ef554299294a54aa6f,"[0, 2]",True,297,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.5586924219910847,,False,False
 bm25@2,5ab29649554299194fa93413,"[0, 2]",False,361,No,Daniel Day-Lewis,bridge,0.0,0.0,1.0,0.8433159722222222,0.0,False,True
 bm25@2,5a7a572155429941d65f25c0,"[4, 9]",False,216,Ball Brothers,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.8466997870830376,,False,False
 bm25@2,5abbb6e25542996606241724,"[1, 4]",False,306,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.812958435207824,1.0,False,False
@@ -2316,7 +2316,7 @@ minilm@2,5ae4a3975542995ad6573dec,"[0, 2]",True,225,no,Life as We Know It,bridge
 minilm@2,5a8b499355429949d91db52d,"[3, 7]",True,248,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.7484787018255579,,False,False
 minilm@2,5ac3fd0755429919431738ee,"[5, 8]",True,289,American Lion,American Lion,bridge,1.0,1.0,0.0,0.7750972762645915,,True,False
 minilm@2,5add12c45542994ed6169c60,"[1, 3]",False,195,no,Ubeda Gym,bridge,0.0,0.0,1.0,0.7975077881619937,0.0,False,True
-minilm@2,5a7ba8ef554299294a54aa6f,"[0, 2]",True,297,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,1.0,0.5586924219910847,0.0,False,True
+minilm@2,5a7ba8ef554299294a54aa6f,"[0, 2]",True,297,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.5586924219910847,,False,False
 minilm@2,5ab29649554299194fa93413,"[2, 8]",True,300,Daniel Day-Lewis,Daniel Day-Lewis,bridge,1.0,1.0,1.0,0.8697916666666666,1.0,False,False
 minilm@2,5a7a572155429941d65f25c0,"[2, 4]",True,374,Ball Brothers,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.7345635202271115,,False,False
 minilm@2,5abbb6e25542996606241724,"[1, 2]",True,328,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.7995110024449877,1.0,False,False
@@ -2397,7 +2397,7 @@ minilm@2,5ae3d0f55542990afbd1e1e6,"[3, 9]",False,358,Baby Driver,Baby Driver,bri
 minilm@2,5a76d6c95542994aec3b7185,"[4, 7]",True,215,alcoholic,alcoholic,comparison,1.0,1.0,0.0,0.8484848484848485,,True,False
 minilm@2,5a87108855429960ec39b721,"[2, 6]",True,287,Film industry,film industry,bridge,1.0,1.0,0.0,0.7523727351164797,,True,False
 minilm@2,5ac31b50554299741d48a1f4,"[1, 6]",True,314,Figaro,Figaro,bridge,1.0,1.0,0.0,0.844400396432111,,True,False
-minilm@2,5a8036fa5542996402f6a481,"[8, 9]",True,316,no,Dog,comparison,0.0,0.0,0.0,0.8272279934390377,,False,False
+minilm@2,5a8036fa5542996402f6a481,"[8, 9]",True,316,Molossian-type,Dog,comparison,0.0,0.0,0.0,0.8272279934390377,,False,False
 minilm@2,5adf35875542995ec70e8f92,"[0, 3]",False,234,Nick Jr. Australia,Foxtel Networks,bridge,0.0,0.0,0.0,0.8006814310051107,,False,False
 random@3,5abc3ce45542993a06baf8a4,"[6, 8, 9]",False,536,Minneapolis,Minneapolis,bridge,1.0,1.0,1.0,0.7324013979031453,1.0,False,False
 random@3,5a77b03255429949eeb29f35,"[0, 4, 9]",False,615,2012,2007,bridge,0.0,0.0,1.0,0.554670528602462,0.0,False,True
@@ -2428,7 +2428,7 @@ random@3,5ab3fa095542992ade7c6f0a,"[1, 5, 7]",False,441,79 AD,79 AD,bridge,1.0,1
 random@3,5ac00acd554299012d1db584,"[6, 8, 9]",False,303,no,Dutch,bridge,0.0,0.0,0.0,0.7152255639097744,,False,False
 random@3,5ac170fd55429964131be1fe,"[1, 2, 4]",False,588,Behavior Genetics,"Paris, France",bridge,0.0,0.0,1.0,0.6381538461538461,0.0,False,True
 random@3,5a7cf6d7554299683c1c63f4,"[0, 2, 9]",False,477,2011,2004,bridge,0.0,0.0,1.0,0.6361556064073226,0.0,False,True
-random@3,5ab7ceb555429928e1fe3917,"[3, 4, 5]",False,738,no,magazine,comparison,0.0,0.0,0.0,0.6549789621318374,,False,False
+random@3,5ab7ceb555429928e1fe3917,"[3, 4, 5]",False,738,"None of the provided context mentions Women's Running or Look, so the answer is ""no""",magazine,comparison,0.0,0.0,0.0,0.6549789621318374,,False,False
 random@3,5ae1dc6c5542997283cd22a5,"[3, 5, 7]",False,567,"Farrar, Straus and Giroux",Sonny Seiler,bridge,0.0,0.0,1.0,0.6176668914362778,0.0,False,True
 random@3,5a80899e554299485f598646,"[0, 4, 6]",False,410,2005,1 July 1997,bridge,0.0,0.0,0.0,0.662828947368421,,False,False
 random@3,5a73f9485542993e948e87a6,"[4, 7, 9]",False,374,no,2016,bridge,0.0,0.0,0.0,0.5961123110151187,,False,False
@@ -2460,7 +2460,7 @@ random@3,5a866e7e554299211dda2b29,"[3, 7, 8]",False,935,"Lord Leverhulme, Viscou
 random@3,5adff35955429925eb1afb7a,"[2, 4, 6]",False,536,Jung Yong-hwa,Jung Yong-hwa,bridge,1.0,1.0,1.0,0.5861003861003862,1.0,False,False
 random@3,5abd5c5155429924427fcfc1,"[5, 8, 9]",False,440,Detroit,Detroit,bridge,1.0,1.0,1.0,0.7120418848167539,1.0,False,False
 random@3,5abdc5b35542996e802b4823,"[1, 3, 5]",False,371,"Tusculum, Tennessee","Tusculum, Tennessee",bridge,1.0,1.0,1.0,0.5927552140504939,1.0,False,False
-random@3,5a89de8a554299669944a5f0,"[2, 3, 7]",False,413,Meryl Poster executive produced the 2000 movie based on the novel by Mitchell Block,Joanne Harris,bridge,0.0,0.0,0.0,0.694300518134715,,False,False
+random@3,5a89de8a554299669944a5f0,"[2, 3, 7]",False,413,"Meryl Poster executive produced the 2000 movie ""The Crew"" based on the novel by Mitchell Block",Joanne Harris,bridge,0.0,0.0,0.0,0.694300518134715,,False,False
 random@3,5ab5f630554299637185c645,"[5, 7, 8]",False,303,no,opera,comparison,0.0,0.0,0.0,0.7702805155420773,,False,False
 random@3,5ac05f325542992a796ded03,"[1, 3, 5]",False,393,Yes,yes,comparison,1.0,1.0,1.0,0.6073926073926075,1.0,False,False
 random@3,5a8b83355542997f31a41d59,"[0, 2, 7]",False,736,Nick Van Exel,Scottie Pippen,bridge,0.0,0.0,1.0,0.5811041548093341,0.0,False,True
@@ -2485,7 +2485,7 @@ random@3,5ac4f05755429924173fb4f1,"[2, 4, 7]",False,603,San Francisco,"Paradise,
 random@3,5a727c6c5542991f9a20c48f,"[0, 2, 4]",False,507,Timothy Kopra,Chris Hadfield,bridge,0.0,0.0,1.0,0.6642384105960265,0.0,False,True
 random@3,5ac080c55542992a796ded2a,"[1, 3, 4]",False,443,no,The Velveteen Rabbit,comparison,0.0,0.0,0.0,0.6936376210235131,,False,False
 random@3,5ab8f5685542991b5579f096,"[0, 1, 8]",False,442,1972,1969,bridge,0.0,0.0,1.0,0.6829268292682926,0.0,False,True
-random@3,5ae65e4a55429908198fa5af,"[0, 3, 7]",False,895,0.1 mile,4.2 mi,bridge,0.0,0.0,0.0,0.5319037656903766,,False,False
+random@3,5ae65e4a55429908198fa5af,"[0, 3, 7]",False,895,18 miles,4.2 mi,bridge,0.0,0.0,0.0,0.5319037656903766,,False,False
 random@3,5a770fa955429937353601bc,"[0, 1, 2]",False,534,no,Joseph Eugene Porter,bridge,0.0,0.0,0.0,0.6180257510729614,,False,False
 random@3,5ac062b1554299294b218fb4,"[4, 6, 9]",False,931,No,no,comparison,1.0,1.0,1.0,0.5458536585365854,1.0,False,False
 random@3,5ae0aa28554299603e418435,"[2, 7, 8]",False,523,No,Cartoon Network,bridge,0.0,0.0,0.0,0.714207650273224,,False,False
@@ -2616,7 +2616,7 @@ random@3,5ae4a3975542995ad6573dec,"[0, 4, 8]",False,296,no,Life as We Know It,br
 random@3,5a8b499355429949d91db52d,"[4, 7, 9]",False,442,no,Michael Wolff,bridge,0.0,0.0,0.0,0.5517241379310345,,False,False
 random@3,5ac3fd0755429919431738ee,"[1, 4, 8]",False,499,no,American Lion,bridge,0.0,0.0,0.0,0.6116731517509728,,False,False
 random@3,5add12c45542994ed6169c60,"[4, 8, 9]",False,422,Ubeda Gym,Ubeda Gym,bridge,1.0,1.0,1.0,0.5617860851505712,1.0,False,False
-random@3,5a7ba8ef554299294a54aa6f,"[1, 2, 3]",False,477,"Ahmedabad, Gujarat, India","Ahmedabad, Gujarat, India",bridge,1.0,1.0,1.0,0.29123328380386326,1.0,False,False
+random@3,5a7ba8ef554299294a54aa6f,"[1, 2, 3]",False,477,"Ahmedabad, Gujarat, India","Ahmedabad, Gujarat, India",bridge,1.0,1.0,0.0,0.29123328380386326,,True,False
 random@3,5ab29649554299194fa93413,"[0, 4, 8]",False,620,Daniel Day-Lewis,Daniel Day-Lewis,bridge,1.0,1.0,1.0,0.7309027777777778,1.0,False,False
 random@3,5a7a572155429941d65f25c0,"[0, 3, 7]",False,519,no,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.6316536550745209,,False,False
 random@3,5abbb6e25542996606241724,"[2, 3, 5]",False,563,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.6558679706601467,1.0,False,False
@@ -2916,7 +2916,7 @@ bm25@3,5ae4a3975542995ad6573dec,"[0, 2, 7]",True,339,Life as We Know It,Life as 
 bm25@3,5a8b499355429949d91db52d,"[3, 7, 8]",True,313,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.6825557809330629,,False,False
 bm25@3,5ac3fd0755429919431738ee,"[5, 6, 8]",True,385,American Lion,American Lion,bridge,1.0,1.0,0.0,0.7003891050583657,,True,False
 bm25@3,5add12c45542994ed6169c60,"[0, 1, 3]",False,257,no,Ubeda Gym,bridge,0.0,0.0,1.0,0.7331256490134994,0.0,False,True
-bm25@3,5a7ba8ef554299294a54aa6f,"[0, 1, 2]",True,421,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,1.0,0.37444279346210996,0.0,False,True
+bm25@3,5a7ba8ef554299294a54aa6f,"[0, 1, 2]",True,421,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.37444279346210996,,False,False
 bm25@3,5ab29649554299194fa93413,"[0, 1, 2]",False,501,No,Daniel Day-Lewis,bridge,0.0,0.0,1.0,0.7825520833333334,0.0,False,True
 bm25@3,5a7a572155429941d65f25c0,"[1, 4, 9]",False,294,Ball Brothers,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.7913413768630234,,False,False
 bm25@3,5abbb6e25542996606241724,"[1, 2, 4]",True,388,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.7628361858190709,1.0,False,False
@@ -3040,7 +3040,7 @@ minilm@3,5abec25e5542997ec76fd35b,"[0, 7, 8]",True,377,20th Century Fox,20th Cen
 minilm@3,5ae6983d5542996d980e7c30,"[0, 2, 8]",True,634,Continental Navy,Provincial Congress of the Province of Massachusetts Bay,bridge,0.0,0.0,0.0,0.6848906560636183,,False,False
 minilm@3,5a7a8bf955429941d65f269c,"[1, 5, 7]",True,476,Eastside Canal,Eastside Canal,comparison,1.0,1.0,1.0,0.72,1.0,False,False
 minilm@3,5ab5c3ec554299494045f059,"[1, 2, 9]",True,401,two,two,bridge,1.0,1.0,0.0,0.6952887537993921,,True,False
-minilm@3,5ac033605542997d642959e2,"[2, 4, 6]",True,516,Director,director,comparison,1.0,1.0,0.0,0.5700000000000001,,True,False
+minilm@3,5ac033605542997d642959e2,"[2, 6, 8]",True,582,Director,director,comparison,1.0,1.0,0.0,0.515,,True,False
 minilm@3,5a7b4073554299042af8f733,"[0, 2, 6]",True,700,leg injury,leg injury,bridge,1.0,1.0,0.0,0.6040723981900453,,True,False
 minilm@3,5ab6840c55429954757d331f,"[0, 2, 5]",True,399,no,habitat loss,bridge,0.0,0.0,1.0,0.70509977827051,0.0,False,True
 minilm@3,5a89b8f1554299669944a581,"[3, 4, 9]",True,458,No,no,comparison,1.0,1.0,0.0,0.7376861397479955,,True,False
@@ -3115,7 +3115,7 @@ minilm@3,5a8871c955429938390d3f68,"[0, 1, 6]",True,377,Bianca Gascoigne,Bianca G
 minilm@3,5a80cc7555429938b61421ed,"[1, 4, 6]",True,379,No,no,comparison,1.0,1.0,0.0,0.7799070847851336,,True,False
 minilm@3,5a8dcde355429941ae14e061,"[1, 6, 7]",True,284,Young adult high fantasy,fantasy,bridge,0.0,0.4,1.0,0.7468805704099821,0.0,False,True
 minilm@3,5a82a27555429940e5e1a901,"[3, 5, 7]",True,417,"August 6, 1990","August 6, 1990",bridge,1.0,1.0,1.0,0.719758064516129,1.0,False,False
-minilm@3,5a878e705542993e715abfa1,"[0, 2, 8]",False,490,no,Pakistani,bridge,0.0,0.0,1.0,0.6425966447848286,0.0,False,True
+minilm@3,5a878e705542993e715abfa1,"[0, 8, 9]",False,393,Pakistani,Pakistani,bridge,1.0,1.0,1.0,0.7133479212253829,1.0,False,False
 minilm@3,5a9000ee5542995651fb50a0,"[2, 5, 6]",True,576,Pete's Tavern on Irving Place in New York City,at Pete's Tavern on Irving Place in New York City,bridge,0.0,0.9473684210526316,0.0,0.6464088397790055,,False,False
 minilm@3,5aba37f155429955dce3ede2,"[1, 4, 9]",True,546,Yes,author,comparison,0.0,0.0,0.0,0.696329254727475,,False,False
 minilm@3,5a7269485542992359bc308a,"[1, 4, 5]",True,455,"""Live and Let Die""","""Live and Let Die""",bridge,1.0,1.0,1.0,0.6276595744680851,1.0,False,False
@@ -3128,13 +3128,13 @@ minilm@3,5ae0a80d554299603e418430,"[6, 8, 9]",True,301,1964,"August 24, 1964",br
 minilm@3,5ae5ea2a5542996de7b71a6d,"[1, 2, 8]",True,371,Golden Globe Award nomination,Golden Globe Award,bridge,0.0,0.8571428571428571,0.0,0.7648922686945501,,False,False
 minilm@3,5a8537065542997175ce1f97,"[0, 4, 9]",True,439,California,California,comparison,1.0,1.0,1.0,0.6532385466034756,1.0,False,False
 minilm@3,5a729acc5542992359bc3134,"[2, 4, 6]",True,316,"""Over""",Over,bridge,1.0,1.0,1.0,0.8111177525403467,1.0,False,False
-minilm@3,5ab270b0554299449642c8a1,"[1, 5, 6]",True,346,Both Eric Ambler and Michel Butor writers in France,yes,comparison,0.0,0.0,0.0,0.6956904133685136,,False,False
+minilm@3,5ab270b0554299449642c8a1,"[1, 5, 6]",True,346,France,yes,comparison,0.0,0.0,0.0,0.6956904133685136,,False,False
 minilm@3,5ab290ec5542993be8fa9951,"[0, 7, 8]",True,343,Bada,Bada,comparison,1.0,1.0,1.0,0.7155887230514096,1.0,False,False
 minilm@3,5ae077e75542993d6555eb71,"[0, 7, 8]",True,523,Bolshoi Ballet,Bolshoi Ballet,bridge,1.0,1.0,1.0,0.5901253918495297,1.0,False,False
 minilm@3,5a8c60855542995e66a475dc,"[5, 7, 9]",True,432,Lakenheath,RAF Lakenheath,bridge,0.0,0.6666666666666666,1.0,0.796514366462553,0.0,False,True
 minilm@3,5abcfc375542992ac4f38179,"[1, 2, 3]",True,455,No,no,comparison,1.0,1.0,1.0,0.5833333333333333,1.0,False,False
 minilm@3,5a71335e5542994082a3e65d,"[4, 6, 7]",True,385,Simona de Silvestro,Simona de Silvestro,bridge,1.0,1.0,1.0,0.7156573116691285,1.0,False,False
-minilm@3,5a7b8a8a554299042af8f77d,"[6, 7, 9]",True,419,Hey Arnold!,Nickelodeon,bridge,0.0,0.0,1.0,0.7635440180586908,0.0,False,True
+minilm@3,5a7b8a8a554299042af8f77d,"[6, 7, 9]",True,419,Nickelodeon,Nickelodeon,bridge,1.0,1.0,1.0,0.7635440180586908,1.0,False,False
 minilm@3,5a7ded185542995f4f402312,"[0, 2, 4]",True,396,Strangers with Candy,Strangers with Candy,bridge,1.0,1.0,0.0,0.6699999999999999,,True,False
 minilm@3,5a851cdb5542997175ce1f86,"[2, 3, 8]",True,479,Arecibo Observatory,Arecibo Observatory,bridge,1.0,1.0,1.0,0.7547363031233999,1.0,False,False
 minilm@3,5ac3a5b6554299391541387c,"[1, 6, 9]",True,327,The Next Food Network Star,FX Movie Download,bridge,0.0,0.0,0.0,0.6855769230769231,,False,False
@@ -3173,7 +3173,7 @@ minilm@3,5a7609da5542994ccc918696,"[3, 8, 9]",True,500,no,Katonah,bridge,0.0,0.0
 minilm@3,5ab95d405542996be20204a8,"[0, 4, 5]",True,408,Lakeview Terrace,Out of Sight,bridge,0.0,0.0,0.0,0.6382978723404256,,False,False
 minilm@3,5ac50da255429924173fb58a,"[0, 5, 8]",True,607,Scribner's,Scribner's,bridge,1.0,1.0,1.0,0.6906218144750255,1.0,False,False
 minilm@3,5add5d575542997545bbbd41,"[3, 5, 8]",True,342,no,no,comparison,1.0,1.0,1.0,0.655241935483871,1.0,False,False
-minilm@3,5a8ef3575542995a26add58b,"[0, 3, 5]",True,520,John Carpenter's Village of the Damned,John Lasseter,bridge,0.0,0.28571428571428575,1.0,0.6607958251793868,0.0,False,True
+minilm@3,5a8ef3575542995a26add58b,"[0, 3, 5]",True,520,John Carpenter,John Lasseter,bridge,0.0,0.5,1.0,0.6607958251793868,0.0,False,True
 minilm@3,5ae5345a5542990ba0bbb219,"[1, 2, 4]",True,428,1983,1983,bridge,1.0,1.0,1.0,0.6112624886466849,1.0,False,False
 minilm@3,5ab41b025542996a3a969f3c,"[1, 3, 7]",False,462,Nassau County,Nassau County,bridge,1.0,1.0,1.0,0.5993061578490892,1.0,False,False
 minilm@3,5ac42235554299204fd21ef9,"[2, 4, 6]",True,306,North Somercotes,North Somercotes,bridge,1.0,1.0,1.0,0.6702586206896552,1.0,False,False
@@ -3216,7 +3216,7 @@ minilm@3,5ae4a3975542995ad6573dec,"[0, 2, 7]",True,339,Life as We Know It,Life a
 minilm@3,5a8b499355429949d91db52d,"[3, 4, 7]",True,352,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.6430020283975659,,False,False
 minilm@3,5ac3fd0755429919431738ee,"[2, 5, 8]",True,416,"""American Lion""",American Lion,bridge,1.0,1.0,0.0,0.6762645914396888,,True,False
 minilm@3,5add12c45542994ed6169c60,"[1, 3, 9]",True,308,Ubeda Gym,Ubeda Gym,bridge,1.0,1.0,1.0,0.6801661474558671,1.0,False,False
-minilm@3,5a7ba8ef554299294a54aa6f,"[0, 2, 4]",True,456,"Ahmedabad, Gujarat, India","Ahmedabad, Gujarat, India",bridge,1.0,1.0,1.0,0.32243684992570576,1.0,False,False
+minilm@3,5a7ba8ef554299294a54aa6f,"[0, 2, 4]",True,456,"Ahmedabad, Gujarat, India","Ahmedabad, Gujarat, India",bridge,1.0,1.0,0.0,0.32243684992570576,,True,False
 minilm@3,5ab29649554299194fa93413,"[2, 7, 8]",True,586,Daniel Day-Lewis,Daniel Day-Lewis,bridge,1.0,1.0,1.0,0.7456597222222222,1.0,False,False
 minilm@3,5a7a572155429941d65f25c0,"[2, 4, 7]",True,448,Ball,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.6820440028388928,,False,False
 minilm@3,5abbb6e25542996606241724,"[1, 2, 3]",True,495,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.6974327628361858,1.0,False,False
@@ -3326,7 +3326,7 @@ random@4,5a74b8a05542996c70cfadbc,"[0, 2, 4, 5]",False,560,Yaoundé,Yaoundé,bri
 random@4,5ab6c2b0554299710c8d1f50,"[0, 1, 2, 7]",False,675,Despicable Me,Despicable Me,bridge,1.0,1.0,1.0,0.5112237509051412,1.0,False,False
 random@4,5ab3fa095542992ade7c6f0a,"[1, 5, 6, 9]",True,643,79 AD,79 AD,bridge,1.0,1.0,1.0,0.6537425955842757,1.0,False,False
 random@4,5ac00acd554299012d1db584,"[0, 1, 4, 6]",False,490,Beketov,Dutch,bridge,0.0,0.0,0.0,0.5394736842105263,,False,False
-random@4,5ac170fd55429964131be1fe,"[2, 3, 4, 8]",False,673,"[1] SLAS Discovery was not mentioned in the context. [2] Annales de chimie et de physique was founded in Paris, France. [","Paris, France",bridge,0.0,0.18181818181818182,1.0,0.5858461538461539,0.0,False,True
+random@4,5ac170fd55429964131be1fe,"[2, 3, 4, 8]",False,673,[1] SLAS Discovery was founded in 1996,"Paris, France",bridge,0.0,0.0,1.0,0.5858461538461539,0.0,False,True
 random@4,5a7cf6d7554299683c1c63f4,"[2, 3, 5, 6]",False,719,2011,2004,bridge,0.0,0.0,1.0,0.45156369183829137,0.0,False,True
 random@4,5ab7ceb555429928e1fe3917,"[4, 5, 6, 7]",False,742,"None of the provided context mentions Women's Running or Look, so the answer is ""no""",magazine,comparison,0.0,0.0,0.0,0.6531089294062646,,False,False
 random@4,5ae1dc6c5542997283cd22a5,"[0, 1, 2, 9]",False,579,Seiler,Sonny Seiler,bridge,0.0,0.6666666666666666,1.0,0.6095751854349292,0.0,False,True
@@ -3342,7 +3342,7 @@ random@4,5a7a8bf955429941d65f269c,"[0, 1, 8, 9]",False,741,Eastside Canal,Eastsi
 random@4,5ab5c3ec554299494045f059,"[2, 4, 7, 8]",False,788,"1 (Anjelica Huston won the Academy Award for Best Supporting Actress for her performance in 1985's ""Prizzi's Honor"")",two,bridge,0.0,0.0,0.0,0.40121580547112456,,False,False
 random@4,5ac033605542997d642959e2,"[1, 4, 6, 8]",False,557,Director,director,comparison,1.0,1.0,0.0,0.5358333333333334,,True,False
 random@4,5a7b4073554299042af8f733,"[5, 7, 8, 9]",False,736,"The Process did not play in the 77th season because he was a basketball player, and the context provided does not mention any basketball player named ""The Process",leg injury,bridge,0.0,0.0,0.0,0.5837104072398189,,False,False
-random@4,5ab6840c55429954757d331f,"[2, 3, 8, 9]",False,471,Habitat loss,habitat loss,bridge,1.0,1.0,1.0,0.6518847006651884,1.0,False,False
+random@4,5ab6840c55429954757d331f,"[2, 3, 8, 9]",False,471,no,habitat loss,bridge,0.0,0.0,1.0,0.6518847006651884,0.0,False,True
 random@4,5a89b8f1554299669944a581,"[4, 6, 7, 8]",False,903,No,no,comparison,1.0,1.0,0.0,0.4828178694158075,,True,False
 random@4,5abab21c55429901930fa89f,"[1, 2, 7, 9]",False,732,Calvin Harris,Iron,bridge,0.0,0.0,0.0,0.5937846836847946,,False,False
 random@4,5a7fa8f45542994857a767a6,"[0, 3, 4, 8]",False,759,The Blank Generation,The Blank Generation,comparison,1.0,1.0,1.0,0.44395604395604393,1.0,False,False
@@ -3366,7 +3366,7 @@ random@4,5ac05f325542992a796ded03,"[0, 1, 2, 4]",False,448,No,yes,comparison,0.0
 random@4,5a8b83355542997f31a41d59,"[1, 3, 6, 9]",False,681,Pip,Scottie Pippen,bridge,0.0,0.0,1.0,0.6124075128059192,0.0,False,True
 random@4,5ac1324855429964131be178,"[1, 7, 8, 9]",True,572,Gerald McRaney,Gerald Lee McRaney,bridge,0.0,0.8,0.0,0.6082191780821917,,False,False
 random@4,5aba89ac55429901930fa815,"[2, 3, 4, 6]",False,570,Middle East Airlines (MEA),Middle East Airlines,bridge,0.0,0.8571428571428571,1.0,0.5808823529411764,0.0,False,True
-random@4,5adfbd70554299603e41839d,"[3, 5, 7, 9]",False,978,1945,1870,bridge,0.0,0.0,1.0,0.4596685082872928,0.0,False,True
+random@4,5adfbd70554299603e41839d,"[3, 5, 7, 9]",False,978,1947,1870,bridge,0.0,0.0,1.0,0.4596685082872928,0.0,False,True
 random@4,5ae0094f55429925eb1afbf0,"[4, 6, 8, 9]",False,607,no,Victor Buono,bridge,0.0,0.0,1.0,0.5112721417069244,0.0,False,True
 random@4,5a809ba85542992097ad3008,"[0, 1, 4, 5]",False,500,John Legend,John Roger Stephens,bridge,0.0,0.4,0.0,0.567847882454624,,False,False
 random@4,5a7d213255429909bec76978,"[6, 7, 8, 9]",True,643,2008,2002,bridge,0.0,0.0,0.0,0.5978736710444028,,False,False
@@ -3516,7 +3516,7 @@ random@4,5ae4a3975542995ad6573dec,"[3, 4, 7, 9]",False,653,no,Life as We Know It
 random@4,5a8b499355429949d91db52d,"[3, 4, 5, 7]",True,476,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.5172413793103448,,False,False
 random@4,5ac3fd0755429919431738ee,"[1, 2, 4, 6]",False,614,No,American Lion,bridge,0.0,0.0,0.0,0.5221789883268482,,False,False
 random@4,5add12c45542994ed6169c60,"[0, 1, 3, 4]",False,350,no,Ubeda Gym,bridge,0.0,0.0,1.0,0.6365524402907581,0.0,False,True
-random@4,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3]",True,514,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,1.0,0.23625557206537895,0.0,False,True
+random@4,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3]",True,514,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.23625557206537895,,False,False
 random@4,5ab29649554299194fa93413,"[1, 3, 7, 8]",False,1174,Daniel Day-Lewis,Daniel Day-Lewis,bridge,1.0,1.0,1.0,0.49045138888888884,1.0,False,False
 random@4,5a7a572155429941d65f25c0,"[0, 3, 8, 9]",False,657,no,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.5337118523775728,,False,False
 random@4,5abbb6e25542996606241724,"[4, 5, 6, 8]",False,879,Dave Thomas Foundation for Adoption,Wendy's,bridge,0.0,0.0,1.0,0.4627139364303179,0.0,False,True
@@ -3530,12 +3530,12 @@ random@4,5a89220755429938390d403a,"[0, 3, 5, 8]",False,653,no,"""Party of Five""
 random@4,5a7dd0875542990b8f503ac4,"[4, 6, 8, 9]",False,455,1,eight,bridge,0.0,0.0,0.0,0.6483771251931993,,False,False
 random@4,5adce37b5542992c1e3a2468,"[2, 4, 7, 9]",False,818,"T.J. Lavin hosted ""Spring Break Challenge"" and ""The Challenge""","""The Challenge""",bridge,0.0,0.2222222222222222,0.0,0.4725983236621535,,False,False
 random@4,5a7af56d55429931da12c9aa,"[2, 3, 6, 9]",False,408,no,Eisenhower,bridge,0.0,0.0,1.0,0.5895372233400402,0.0,False,True
-random@4,5abd30f95542993062266bcc,"[0, 2, 8, 9]",True,657,Gregory Hoblit,won nine Primetime Emmy Awards for directing,comparison,0.0,0.0,0.0,0.5660501981505944,,False,False
+random@4,5abd30f95542993062266bcc,"[0, 2, 8, 9]",True,657,Gregory Hoblit has not been mentioned as having won 9 Primetime Emmy Awards. Paul Sloane has not been mentioned as having won 9 Primetime,won nine Primetime Emmy Awards for directing,comparison,0.0,0.25806451612903225,0.0,0.5660501981505944,,False,False
 random@4,5a8e69ae5542990e94052afd,"[0, 1, 4, 5]",False,489,NHL,National Hockey League,bridge,0.0,0.0,0.0,0.625,,False,False
 random@4,5a81da0d55429903bc27b9ee,"[1, 4, 7, 8]",False,581,Lillian Gish,First Lady of American Cinema,bridge,0.0,0.0,0.0,0.5464480874316939,,False,False
 random@4,5adcb2fc554299473435376f,"[0, 3, 5, 9]",False,695,Héctor Marcano Martinez,Héctor Marcano Martinez,bridge,1.0,1.0,1.0,0.6160220994475138,1.0,False,False
 random@4,5a7b72e15542997c3ec97187,"[2, 5, 6, 8]",False,721,Stevie Wonder,the Food and Agriculture Organization,bridge,0.0,0.0,0.0,0.5278323510150622,,False,False
-random@4,5abe7c515542993f32c2a128,"[0, 1, 8, 9]",False,794,no,"43,000 marchers",bridge,0.0,0.0,0.0,0.5698808234019501,,False,False
+random@4,5abe7c515542993f32c2a128,"[0, 1, 8, 9]",False,794,300,"43,000 marchers",bridge,0.0,0.0,0.0,0.5698808234019501,,False,False
 random@4,5a8007b45542992bc0c4a686,"[1, 2, 4, 8]",False,580,Kstovo is 22 km southeast of a city that is the capital of the Krasnodar Krai federal district,Volga Federal District,bridge,0.0,0.2222222222222222,0.0,0.5895258315640481,,False,False
 random@4,5a81bcc05542990a1d231e86,"[3, 5, 8, 9]",False,735,Mark van Bommel,Mark van Bommel,bridge,1.0,1.0,1.0,0.5368620037807184,1.0,False,False
 random@4,5a7f288055429934daa2fd09,"[0, 1, 6, 9]",False,717,Lewis Taylor,Kedar Massenburg,bridge,0.0,0.0,0.0,0.5119128658951668,,False,False
@@ -3620,7 +3620,7 @@ bm25@4,5ab83dd255429934fafe6d2f,"[0, 1, 3, 5]",False,291,Yes,yes,comparison,1.0,
 bm25@4,5a7737985542994aec3b722e,"[1, 2, 5, 7]",True,401,Kevin Nealon,Kevin Nealon,bridge,1.0,1.0,1.0,0.7123385939741751,1.0,False,False
 bm25@4,5ade6b67554299728e26c71c,"[2, 5, 6, 7]",True,632,Senior Service,Royal Navy,bridge,0.0,0.0,0.0,0.6037617554858934,,False,False
 bm25@4,5a7e7b2c5542997cc2c4754e,"[0, 5, 7, 9]",True,529,The Wave,The Wave,bridge,1.0,1.0,0.0,0.5225631768953068,,True,False
-bm25@4,5ac0269b5542996f0d89cb3c,"[2, 3, 4, 7]",False,531,"Wembley, London","Colindale, London",bridge,0.0,0.5,0.0,0.6580811332904057,,False,False
+bm25@4,5ac0269b5542996f0d89cb3c,"[2, 3, 4, 7]",False,531,399 Edgware Road,"Colindale, London",bridge,0.0,0.0,0.0,0.6580811332904057,,False,False
 bm25@4,5a9048bd55429933b8a204d5,"[0, 2, 4, 5]",True,415,Germany national football team,Germany national team,bridge,0.0,0.8571428571428571,0.0,0.766065388951522,,False,False
 bm25@4,5a74b8a05542996c70cfadbc,"[0, 2, 5, 7]",False,480,Yaoundé,Yaoundé,bridge,1.0,1.0,1.0,0.6780684104627767,1.0,False,False
 bm25@4,5ab6c2b0554299710c8d1f50,"[1, 3, 6, 8]",True,641,Despicable Me,Despicable Me,bridge,1.0,1.0,1.0,0.5358435916002897,1.0,False,False
@@ -3816,7 +3816,7 @@ bm25@4,5ae4a3975542995ad6573dec,"[0, 2, 7, 9]",True,442,Life as We Know It,Life 
 bm25@4,5a8b499355429949d91db52d,"[0, 3, 7, 8]",True,435,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.5588235294117647,,False,False
 bm25@4,5ac3fd0755429919431738ee,"[4, 5, 6, 8]",True,546,American Lion,American Lion,bridge,1.0,1.0,0.0,0.5750972762645914,,True,False
 bm25@4,5add12c45542994ed6169c60,"[0, 1, 2, 3]",False,376,no,Ubeda Gym,bridge,0.0,0.0,1.0,0.6095534787123572,0.0,False,True
-bm25@4,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3]",True,514,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,1.0,0.23625557206537895,0.0,False,True
+bm25@4,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3]",True,514,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.23625557206537895,,False,False
 bm25@4,5ab29649554299194fa93413,"[0, 1, 2, 5]",False,660,no,Daniel Day-Lewis,bridge,0.0,0.0,1.0,0.7135416666666667,0.0,False,True
 bm25@4,5a7a572155429941d65f25c0,"[1, 4, 5, 9]",False,483,Ball Brothers,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.6572036905606813,,False,False
 bm25@4,5abbb6e25542996606241724,"[1, 2, 3, 4]",True,555,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.660757946210269,1.0,False,False
@@ -3888,7 +3888,7 @@ bm25@4,5a88ab1d5542997e5c09a69f,"[4, 5, 8, 9]",False,493,no,Roxette,bridge,0.0,0
 bm25@4,5a7cbf93554299452d57b9f5,"[1, 3, 4, 8]",True,506,Magdalen College,Magdalen College,bridge,1.0,1.0,0.0,0.7118451025056948,,True,False
 bm25@4,5adfa0705542995534e8c821,"[1, 2, 3, 4]",True,442,China,People's Republic of China,comparison,0.0,0.4,0.0,0.32928679817905915,,False,False
 bm25@4,5ae6a5745542991bbc97615b,"[1, 3, 8, 9]",True,615,Richard Curtis,Richard Curtis,bridge,1.0,1.0,0.0,0.5481263776634827,,True,False
-bm25@4,5adf42d45542993344016c4a,"[1, 5, 7, 8]",False,472,Irréversible,Gaspar Noé,bridge,0.0,0.0,1.0,0.6036943744752309,0.0,False,True
+bm25@4,5adf42d45542993344016c4a,"[1, 5, 7, 8]",False,472,no,Gaspar Noé,bridge,0.0,0.0,1.0,0.6036943744752309,0.0,False,True
 bm25@4,5a7dbabc5542990b8f503a4a,"[3, 4, 5, 9]",True,508,Catherine Deneuve,Catherine Deneuve,bridge,1.0,1.0,0.0,0.6624584717607973,,True,False
 bm25@4,5ab6739355429954757d32c0,"[1, 3, 6, 7]",True,664,Second City,Chicago's Second City and ImprovOlympic,bridge,0.0,0.5714285714285715,0.0,0.4973504920514762,,False,False
 bm25@4,5a71360b5542994082a3e673,"[2, 6, 7, 8]",False,608,no,2014,bridge,0.0,0.0,0.0,0.51242983159583,,False,False
@@ -3990,7 +3990,7 @@ minilm@4,5a770fa955429937353601bc,"[2, 4, 5, 6]",True,494,Flavor Flav,Joseph Eug
 minilm@4,5ac062b1554299294b218fb4,"[0, 4, 5, 8]",True,669,No,no,comparison,1.0,1.0,1.0,0.6736585365853658,1.0,False,False
 minilm@4,5ae0aa28554299603e418435,"[1, 3, 5, 7]",True,820,Cartoon Network (Pakistan),Cartoon Network,bridge,0.0,0.8,0.0,0.5519125683060109,,False,False
 minilm@4,5a7df4795542990b8f503b08,"[0, 7, 8, 9]",True,424,Maurice Elvey,Maurice Elvey,comparison,1.0,1.0,0.0,0.5776892430278884,,True,False
-minilm@4,5addfd6f5542997dc7907108,"[1, 3, 7, 9]",True,472,Writer and director,director,comparison,0.0,0.5,1.0,0.5996607294317218,0.0,False,True
+minilm@4,5addfd6f5542997dc7907108,"[1, 3, 7, 9]",True,472,writer and director,director,comparison,0.0,0.5,1.0,0.5996607294317218,0.0,False,True
 minilm@4,5a8472125542992ef85e23fe,"[0, 4, 7, 8]",True,825,Ne-Yo,"Shaffer ""Ne-Yo"" Smith",bridge,0.0,0.5,0.0,0.5559741657696448,,False,False
 minilm@4,5adbf7e755429947ff17387b,"[1, 5, 6, 7]",True,476,Amlóði,"""Amlóði""",bridge,1.0,1.0,1.0,0.546234509056244,1.0,False,False
 minilm@4,5a83205955429966c78a6b43,"[2, 5, 6, 9]",True,823,four,four,bridge,1.0,1.0,1.0,0.46349413298565845,1.0,False,False
@@ -4008,9 +4008,9 @@ minilm@4,5ae0a44f55429945ae9593de,"[3, 7, 8, 9]",True,535,Yes,yes,comparison,1.0
 minilm@4,5ac1682855429964131be1d2,"[0, 4, 8, 9]",True,465,New York City,"Washington, D.C.",bridge,0.0,0.0,0.0,0.6406491499227203,,False,False
 minilm@4,5a901ad75542995651fb50ab,"[1, 5, 6, 9]",False,752,Colin Murray,Edith Bowman,bridge,0.0,0.0,0.0,0.5702857142857143,,False,False
 minilm@4,5ac4154e5542997ea680c9f6,"[1, 2, 5, 8]",True,549,Alexei Uchitel,Alexei Popogrebski,bridge,0.0,0.5,1.0,0.5853474320241692,0.0,False,True
-minilm@4,5ae210235542994d89d5b32b,"[0, 5, 7, 8]",False,580,"""the Bison""","""The Bison""",bridge,1.0,1.0,0.0,0.5632530120481928,,True,False
+minilm@4,5ae210235542994d89d5b32b,"[0, 5, 7, 8]",False,580,"""Box-to-box""","""The Bison""",bridge,0.0,0.0,0.0,0.5632530120481928,,False,False
 minilm@4,5ac347205542995ef918c179,"[1, 3, 5, 7]",True,365,American,American,bridge,1.0,1.0,1.0,0.6445959104186952,1.0,False,False
-minilm@4,5a7c96e55542990527d554d9,"[2, 3, 5, 8]",True,735,died in an automobile accident,in an automobile accident,bridge,0.0,0.8571428571428571,0.0,0.6201550387596899,,False,False
+minilm@4,5a7c96e55542990527d554d9,"[2, 5, 8, 9]",True,695,"died in an automobile accident in Eugene, Oregon",in an automobile accident,bridge,0.0,0.6,0.0,0.6408268733850129,,False,False
 minilm@4,5a8871c955429938390d3f68,"[0, 1, 6, 9]",True,410,Bianca Gascoigne,Bianca Gascoigne,bridge,1.0,1.0,1.0,0.6824167312161116,1.0,False,False
 minilm@4,5a80cc7555429938b61421ed,"[1, 3, 4, 6]",True,630,No,no,comparison,1.0,1.0,0.0,0.6341463414634146,,True,False
 minilm@4,5a8dcde355429941ae14e061,"[1, 5, 6, 7]",True,358,Fantasy,fantasy,bridge,1.0,1.0,1.0,0.6809269162210339,1.0,False,False
@@ -4022,7 +4022,7 @@ minilm@4,5a7269485542992359bc308a,"[1, 4, 5, 9]",True,530,"""Live and Let Die"""
 minilm@4,5a74567755429979e288290c,"[0, 1, 6, 7]",True,522,"""Passenger 57""",Passenger 57,bridge,1.0,1.0,1.0,0.682095006090134,1.0,False,False
 minilm@4,5a88ba215542993e715ac088,"[0, 7, 8, 9]",True,674,New Zealand,New Zealand,bridge,1.0,1.0,1.0,0.5712468193384224,1.0,False,False
 minilm@4,5a7335755542992359bc328f,"[0, 1, 8, 9]",True,626,no,Michael Alan Penning,bridge,0.0,0.0,0.0,0.6210653753026634,,False,False
-minilm@4,5a7dd6cd5542995f4f4022cd,"[1, 3, 6, 8]",True,475,Pulitzer Prize for drama,Pulitzer Prize,bridge,0.0,0.6666666666666666,0.0,0.7150569886022795,,False,False
+minilm@4,5a7dd6cd5542995f4f4022cd,"[3, 5, 6, 8]",True,540,Pulitzer Prize for drama,Pulitzer Prize,bridge,0.0,0.6666666666666666,0.0,0.6760647870425915,,False,False
 minilm@4,5ac4f9695542996feb3fe9b2,"[0, 4, 5, 7]",True,564,No,no,comparison,1.0,1.0,1.0,0.5743396226415094,1.0,False,False
 minilm@4,5ae0a80d554299603e418430,"[0, 6, 8, 9]",True,404,1964,"August 24, 1964",bridge,0.0,0.5,0.0,0.6946334089191233,,False,False
 minilm@4,5ae5ea2a5542996de7b71a6d,"[1, 2, 5, 8]",True,485,Golden Globe Award nomination,Golden Globe Award,bridge,0.0,0.8571428571428571,0.0,0.6926489226869454,,False,False
@@ -4095,7 +4095,7 @@ minilm@4,5a8b002155429950cd6afc3e,"[2, 3, 5, 7]",True,701,"February 12, 1970","F
 minilm@4,5a77c75a5542995d831812ca,"[0, 1, 2, 3]",True,703,Santaolalla,Gustavo Alfredo Santaolalla,bridge,0.0,0.5,0.0,0.5625388923459863,,False,False
 minilm@4,5a82096455429926c1cdadf8,"[0, 3, 4, 8]",True,592,David Mitchell,Mitchell and Webb,bridge,0.0,0.4,0.0,0.622208040842374,,False,False
 minilm@4,5a85f67e5542996432c57148,"[0, 1, 3, 6]",True,646,Turner Broadcasting System,Turner Broadcasting System,bridge,1.0,1.0,1.0,0.5504523312456506,1.0,False,False
-minilm@4,5a713b325542994082a3e6b5,"[0, 1, 4, 5]",True,545,Delhi,Agra,bridge,0.0,0.0,0.0,0.5590614886731391,,False,False
+minilm@4,5a713b325542994082a3e6b5,"[0, 4, 5, 8]",True,524,Delhi,Agra,bridge,0.0,0.0,0.0,0.5760517799352751,,False,False
 minilm@4,5ac42446554299204fd21efb,"[1, 2, 6, 9]",True,598,STANCA,STANCA,bridge,1.0,1.0,1.0,0.5832752613240418,1.0,False,False
 minilm@4,5adf75df5542995ec70e901b,"[0, 2, 6, 9]",True,543,Jodelle Ferland,Lillith Sullivan,bridge,0.0,0.0,0.0,0.49675625579240035,,False,False
 minilm@4,5a76e11c5542994aec3b7192,"[5, 6, 7, 8]",True,595,Hanford Site,Hanford Site,bridge,1.0,1.0,1.0,0.5599112426035503,1.0,False,False
@@ -4116,7 +4116,7 @@ minilm@4,5ae4a3975542995ad6573dec,"[0, 2, 6, 7]",True,447,Life as We Know It,Lif
 minilm@4,5a8b499355429949d91db52d,"[1, 3, 4, 7]",True,428,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.565922920892495,,False,False
 minilm@4,5ac3fd0755429919431738ee,"[2, 5, 7, 8]",True,542,"""American Lion""",American Lion,bridge,1.0,1.0,0.0,0.5782101167315175,,True,False
 minilm@4,5add12c45542994ed6169c60,"[0, 1, 3, 9]",True,370,Ubeda Gym,Ubeda Gym,bridge,1.0,1.0,1.0,0.6157840083073728,1.0,False,False
-minilm@4,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 4]",True,580,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,1.0,0.138187221396731,0.0,False,True
+minilm@4,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 4]",True,580,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.138187221396731,,False,False
 minilm@4,5ab29649554299194fa93413,"[0, 2, 7, 8]",True,751,Daniel Day-Lewis,Daniel Day-Lewis,bridge,1.0,1.0,1.0,0.6740451388888888,1.0,False,False
 minilm@4,5a7a572155429941d65f25c0,"[2, 4, 7, 9]",True,485,Ball,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.6557842441447835,,False,False
 minilm@4,5abbb6e25542996606241724,"[1, 2, 3, 4]",True,555,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.660757946210269,1.0,False,False
@@ -4172,7 +4172,7 @@ minilm@4,5ade649355429939a52fe899,"[0, 2, 3, 6]",True,538,"Anda, Heilongjiang",A
 minilm@4,5add2c6c5542994ed6169cab,"[1, 4, 7, 9]",True,732,Marv Albert,Marv Albert,bridge,1.0,1.0,1.0,0.575159605339524,1.0,False,False
 minilm@4,5a80c44f554299260e20a14a,"[0, 2, 4, 7]",True,537,George Miller,George Miller,bridge,1.0,1.0,1.0,0.5998509687034277,1.0,False,False
 minilm@4,5a78cfe255429974737f78b1,"[2, 4, 8, 9]",True,543,Solange,Solange Piaget Knowles,bridge,0.0,0.5,0.0,0.6489980607627667,,False,False
-minilm@4,5a8a2dda554299515336135b,"[3, 4, 7, 8]",True,650,Jun Ji-hyun stars in The Berlin File with Ha Jung-woo,Ha Jung-woo,bridge,0.0,0.3636363636363636,0.0,0.5520330806340454,,False,False
+minilm@4,5a8a2dda554299515336135b,"[1, 3, 4, 7]",True,659,Jun Ji-hyun stars in The Berlin File with Jun,Ha Jung-woo,bridge,0.0,0.0,0.0,0.5458304617505169,,False,False
 minilm@4,5abc2cfc554299114383a0f2,"[0, 1, 6, 7]",True,566,Chokwe Antar Lumumba,Chokwe Lumumba,bridge,0.0,0.8,0.0,0.606671299513551,,False,False
 minilm@4,5ac2bcc2554299218029db0b,"[0, 1, 4, 7]",True,516,John Eisenhower served as a United States Army officer,United States Army officer and military historian,bridge,0.0,0.5333333333333333,0.0,0.7416124186279419,,False,False
 minilm@4,5ade12d455429939a52fe7ed,"[0, 4, 6, 9]",True,639,Big Bang,Big Bang,bridge,1.0,1.0,1.0,0.6584714056654195,1.0,False,False
@@ -4207,7 +4207,7 @@ random@5,5ae73d9d5542991e8301cc30,"[1, 2, 4, 6, 8]",False,921,YC's song Racks fe
 random@5,5ae24110554299492dc91bec,"[0, 2, 4, 7, 9]",False,620,no,film,bridge,0.0,0.0,0.0,0.4459338695263628,,False,False
 random@5,5ab2ba535542991669774076,"[3, 4, 5, 7, 8]",False,865,Disney Television,Walt Disney Productions,comparison,0.0,0.4,0.0,0.502301495972382,,False,False
 random@5,5ab3a4c2554299233954ff70,"[0, 1, 4, 7, 9]",False,840,Napa,Napa cabbage,bridge,0.0,0.6666666666666666,1.0,0.4385026737967914,0.0,False,True
-random@5,5a8babd15542996e8ac8899d,"[0, 1, 4, 8, 9]",True,717,Marvel Animation,Phil Roman,bridge,0.0,0.0,0.0,0.48675733715103797,,False,False
+random@5,5a8babd15542996e8ac8899d,"[0, 1, 4, 8, 9]",True,717,Film Roman,Phil Roman,bridge,0.0,0.5,0.0,0.48675733715103797,,False,False
 random@5,5ae6381b5542992ae0d1628a,"[1, 3, 6, 7, 8]",False,583,Adelaide,"7,003",bridge,0.0,0.0,1.0,0.5173841059602649,0.0,False,True
 random@5,5a8b7b7e55429971feec4723,"[4, 5, 7, 8, 9]",False,766,Drake Passage,Strait of Magellan,bridge,0.0,0.0,1.0,0.5927698032961191,0.0,False,True
 random@5,5a78fc2155429974737f7935,"[2, 4, 5, 6, 9]",False,721,A. E. Housman,A. E. Housman,comparison,1.0,1.0,1.0,0.5058259081562715,1.0,False,False
@@ -4218,7 +4218,7 @@ random@5,5a7cea6355429909bec7687f,"[0, 1, 3, 4, 8]",True,630,Minoru Niihara,Mino
 random@5,5ae48d245542995ad6573d75,"[1, 2, 5, 6, 7]",True,783,1970,20 May 1970,bridge,0.0,0.5,0.0,0.6031424227065383,,False,False
 random@5,5ab83dd255429934fafe6d2f,"[0, 3, 5, 7, 9]",False,486,Yes,yes,comparison,1.0,1.0,1.0,0.4862579281183932,1.0,False,False
 random@5,5a7737985542994aec3b722e,"[1, 3, 5, 6, 8]",False,697,Dana Carvey,Kevin Nealon,bridge,0.0,0.0,1.0,0.5,0.0,False,True
-random@5,5ade6b67554299728e26c71c,"[0, 1, 2, 3, 8]",False,963,Royal Air Force,Royal Navy,bridge,0.0,0.4,0.0,0.3962382445141066,,False,False
+random@5,5ade6b67554299728e26c71c,"[0, 1, 2, 3, 8]",False,963,RAF,Royal Navy,bridge,0.0,0.0,0.0,0.3962382445141066,,False,False
 random@5,5a7e7b2c5542997cc2c4754e,"[0, 3, 5, 6, 8]",False,671,The Wave,The Wave,bridge,1.0,1.0,0.0,0.39440433212996395,,True,False
 random@5,5ac0269b5542996f0d89cb3c,"[3, 5, 6, 7, 9]",False,876,Park Plaza Mall,"Colindale, London",bridge,0.0,0.0,0.0,0.4359304571796523,,False,False
 random@5,5a9048bd55429933b8a204d5,"[0, 2, 3, 4, 7]",False,1040,German national football team,Germany national team,bridge,0.0,0.5714285714285715,0.0,0.41375422773393467,,False,False
@@ -4230,7 +4230,7 @@ random@5,5ac170fd55429964131be1fe,"[0, 1, 3, 4, 6]",False,940,Annales de chimie 
 random@5,5a7cf6d7554299683c1c63f4,"[0, 2, 3, 5, 6]",False,785,2011,2004,bridge,0.0,0.0,1.0,0.4012204424103738,0.0,False,True
 random@5,5ab7ceb555429928e1fe3917,"[1, 2, 3, 4, 5]",False,1119,"None of the provided context mentions Women's Running or Look, so there is no commonality between them",magazine,comparison,0.0,0.0,0.0,0.47685834502103785,,False,False
 random@5,5ae1dc6c5542997283cd22a5,"[1, 2, 4, 8, 9]",False,759,"[1] Golden ""Big"" Wheeler. (no, the question is not a yes/no question)",Sonny Seiler,bridge,0.0,0.0,1.0,0.4881995954146999,0.0,False,True
-random@5,5a80899e554299485f598646,"[2, 3, 7, 8, 9]",False,732,1 July 1997,1 July 1997,bridge,1.0,1.0,0.0,0.3980263157894737,,True,False
+random@5,5a80899e554299485f598646,"[2, 3, 7, 8, 9]",False,732,1997,1 July 1997,bridge,0.0,0.5,0.0,0.3980263157894737,,False,False
 random@5,5a73f9485542993e948e87a6,"[0, 2, 5, 7, 8]",False,580,no,2016,bridge,0.0,0.0,0.0,0.37365010799136067,,False,False
 random@5,5a795670554299148911fa2d,"[0, 1, 4, 6, 8]",True,535,High Times,High Times,comparison,1.0,1.0,1.0,0.6503267973856209,1.0,False,False
 random@5,5a8094a35542995d8a8ddfa4,"[2, 3, 6, 7, 8]",True,612,no,Mark Richard Shuttleworth,comparison,0.0,0.0,0.0,0.41323106423777567,,False,False
@@ -4241,7 +4241,7 @@ random@5,5ae6983d5542996d980e7c30,"[0, 3, 6, 7, 8]",False,946,no,Provincial Cong
 random@5,5a7a8bf955429941d65f269c,"[0, 3, 5, 8, 9]",False,1176,no,Eastside Canal,comparison,0.0,0.0,1.0,0.30823529411764705,0.0,False,True
 random@5,5ab5c3ec554299494045f059,"[1, 2, 7, 8, 9]",True,769,2,two,bridge,0.0,0.0,0.0,0.4156534954407295,,False,False
 random@5,5ac033605542997d642959e2,"[2, 3, 5, 7, 8]",False,644,"Rob Reiner and Lewis Milestone are related as Rob Reiner is the son of Estelle Reiner, who was the wife of Carl Reiner. Lewis",director,comparison,0.0,0.0,0.0,0.4633333333333334,,False,False
-random@5,5a7b4073554299042af8f733,"[2, 3, 5, 6, 7]",False,988,The Process did not play in the 77th season due to a leg injury,leg injury,bridge,0.0,0.3076923076923077,0.0,0.4411764705882353,,False,False
+random@5,5a7b4073554299042af8f733,"[2, 3, 5, 6, 7]",False,988,The Process did not play in the 2015–16 Philadelphia 76ers season due to a leg injury,leg injury,bridge,0.0,0.2666666666666667,0.0,0.4411764705882353,,False,False
 random@5,5ab6840c55429954757d331f,"[0, 1, 3, 4, 6]",False,857,no,habitat loss,bridge,0.0,0.0,1.0,0.36659275683665926,0.0,False,True
 random@5,5a89b8f1554299669944a581,"[0, 4, 5, 6, 7]",False,1103,No,no,comparison,1.0,1.0,0.0,0.368270332187858,,True,False
 random@5,5abab21c55429901930fa89f,"[1, 3, 4, 7, 9]",False,886,Calvin Harris,Iron,bridge,0.0,0.0,0.0,0.5083240843507214,,False,False
@@ -4416,11 +4416,11 @@ random@5,5ae4a3975542995ad6573dec,"[2, 5, 6, 7, 9]",False,557,no,Life as We Know
 random@5,5a8b499355429949d91db52d,"[1, 3, 4, 5, 6]",False,524,Marini,Michael Wolff,bridge,0.0,0.0,0.0,0.46855983772819476,,False,False
 random@5,5ac3fd0755429919431738ee,"[1, 3, 5, 7, 9]",False,671,American Lion,American Lion,bridge,1.0,1.0,0.0,0.4778210116731517,,True,False
 random@5,5add12c45542994ed6169c60,"[0, 2, 3, 7, 9]",True,495,Ubeda Gym,Ubeda Gym,bridge,1.0,1.0,1.0,0.485981308411215,1.0,False,False
-random@5,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3, 4]",True,673,"Ahmedabad, Gujarat, India","Ahmedabad, Gujarat, India",bridge,1.0,1.0,1.0,0.0,1.0,False,False
+random@5,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3, 4]",True,673,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.0,,False,False
 random@5,5ab29649554299194fa93413,"[0, 2, 4, 6, 8]",True,866,Daniel Day-Lewis,Daniel Day-Lewis,bridge,1.0,1.0,1.0,0.6241319444444444,1.0,False,False
 random@5,5a7a572155429941d65f25c0,"[1, 2, 5, 6, 9]",False,744,Ball,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.47196593328601844,,False,False
 random@5,5abbb6e25542996606241724,"[1, 3, 5, 6, 9]",False,879,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.4627139364303179,1.0,False,False
-random@5,5a8308a455429954d2e2ec04,"[1, 2, 5, 7, 9]",False,562,Tommy heavenly6 is a pseudonym for Japanese singer Tomoko Kawase,Tomoko Kawase,comparison,0.0,0.3636363636363636,0.0,0.4133611691022965,,False,False
+random@5,5a8308a455429954d2e2ec04,"[1, 2, 5, 7, 9]",False,562,Pseudonym for Japanese singer Tomoko Kawase,Tomoko Kawase,comparison,0.0,0.5,0.0,0.4133611691022965,,False,False
 random@5,5a731e0b5542991f29ee2d00,"[0, 1, 5, 8, 9]",False,629,no,Rod Laver Arena,bridge,0.0,0.0,1.0,0.4049195837275308,0.0,False,True
 random@5,5a7b658755429927d897bfab,"[0, 2, 3, 6, 8]",False,482,Chanda Rubin,Chanda Rubin,comparison,1.0,1.0,1.0,0.4510250569476082,1.0,False,False
 random@5,5adc133c554299438c868d3f,"[4, 6, 7, 8, 9]",False,348,no,no,comparison,1.0,1.0,1.0,0.5433070866141732,1.0,False,False
@@ -4467,14 +4467,14 @@ random@5,5a8b3d1855429949d91db4fe,"[0, 2, 3, 5, 6]",False,850,Spark New Zealand,
 random@5,5a8bd6275542997f31a41ddb,"[1, 2, 7, 8, 9]",True,671,no,yes,comparison,0.0,0.0,0.0,0.4579967689822294,,False,False
 random@5,5ac23d545542994d76dccefd,"[4, 6, 7, 8, 9]",False,1074,India,India,bridge,1.0,1.0,1.0,0.41503267973856206,1.0,False,False
 random@5,5abc8a0e554299114383a143,"[0, 1, 2, 4, 9]",False,1083,Reggie Harding,Jalen Rose,bridge,0.0,0.0,1.0,0.4052718286655683,0.0,False,True
-random@5,5a8681ef5542996432c571ce,"[0, 1, 2, 7, 8]",False,663,Mississippi,Pennsylvania,bridge,0.0,0.0,1.0,0.5433884297520661,0.0,False,True
+random@5,5a8681ef5542996432c571ce,"[0, 1, 2, 7, 8]",False,663,no,Pennsylvania,bridge,0.0,0.0,1.0,0.5433884297520661,0.0,False,True
 random@5,5ade649355429939a52fe899,"[0, 1, 3, 5, 7]",True,546,"Anda, Heilongjiang",Anda,comparison,0.0,0.6666666666666666,0.0,0.6127659574468085,,False,False
 random@5,5add2c6c5542994ed6169cab,"[3, 5, 7, 8, 9]",False,942,no,Marv Albert,bridge,0.0,0.0,1.0,0.453279164248404,0.0,False,True
 random@5,5a80c44f554299260e20a14a,"[0, 5, 6, 7, 9]",False,673,Norma Moriceau,George Miller,bridge,0.0,0.0,1.0,0.4985096870342772,0.0,False,True
 random@5,5a78cfe255429974737f78b1,"[0, 3, 4, 6, 9]",False,861,Solange,Solange Piaget Knowles,bridge,0.0,0.5,0.0,0.4434389140271493,,False,False
 random@5,5a8a2dda554299515336135b,"[1, 4, 5, 7, 9]",False,631,Jun Ji-hyun stars in The Berlin File with Chris Vance,Ha Jung-woo,bridge,0.0,0.0,0.0,0.5651274982770503,,False,False
 random@5,5abc2cfc554299114383a0f2,"[0, 1, 2, 4, 8]",False,816,Allan Manalang,Chokwe Lumumba,bridge,0.0,0.0,0.0,0.4329395413481585,,False,False
-random@5,5ac2bcc2554299218029db0b,"[0, 1, 4, 5, 6]",True,927,President,United States Army officer and military historian,bridge,0.0,0.0,0.0,0.5358037055583376,,False,False
+random@5,5ac2bcc2554299218029db0b,"[0, 1, 4, 5, 6]",True,927,Colonel,United States Army officer and military historian,bridge,0.0,0.0,0.0,0.5358037055583376,,False,False
 random@5,5ade12d455429939a52fe7ed,"[0, 1, 5, 6, 9]",False,857,Big Bang,Big Bang,bridge,1.0,1.0,1.0,0.5419561731694281,1.0,False,False
 random@5,5adc418655429944faac249a,"[3, 5, 6, 8, 9]",False,1330,Lord Baltimore (1579–1632),George Calvert,bridge,0.0,0.0,0.0,0.38934802571166205,,False,False
 random@5,5ae6903a5542996d980e7c02,"[3, 4, 6, 8, 9]",True,882,University of Connecticut,Bellaire High School,bridge,0.0,0.0,0.0,0.4948453608247423,,False,False
@@ -4622,7 +4622,7 @@ bm25@5,5a7269485542992359bc308a,"[0, 1, 4, 5, 6]",True,576,"""Live and Let Die""
 bm25@5,5a74567755429979e288290c,"[1, 3, 4, 6, 7]",False,584,New Jack City,Passenger 57,bridge,0.0,0.0,1.0,0.6443361753958587,0.0,False,True
 bm25@5,5a88ba215542993e715ac088,"[1, 4, 5, 7, 8]",False,898,New Zealand,New Zealand,bridge,1.0,1.0,1.0,0.42875318066157764,1.0,False,False
 bm25@5,5a7335755542992359bc328f,"[1, 3, 4, 5, 6]",False,877,Brandon Lewis,Michael Alan Penning,bridge,0.0,0.0,0.0,0.4691283292978208,,False,False
-bm25@5,5a7dd6cd5542995f4f4022cd,"[1, 2, 3, 5, 8]",False,650,American playwrite who won the 2012 Tony Award for Best Actress in a Play,Pulitzer Prize,bridge,0.0,0.0,0.0,0.6100779844031194,,False,False
+bm25@5,5a7dd6cd5542995f4f4022cd,"[1, 2, 3, 5, 8]",False,650,Pulitzer Prize for Drama,Pulitzer Prize,bridge,0.0,0.6666666666666666,0.0,0.6100779844031194,,False,False
 bm25@5,5ac4f9695542996feb3fe9b2,"[1, 2, 5, 6, 8]",False,707,No,no,comparison,1.0,1.0,1.0,0.4664150943396227,1.0,False,False
 bm25@5,5ae0a80d554299603e418430,"[1, 3, 4, 8, 9]",False,651,16 October 2013,"August 24, 1964",bridge,0.0,0.0,0.0,0.5079365079365079,,False,False
 bm25@5,5ae5ea2a5542996de7b71a6d,"[0, 1, 4, 6, 8]",True,832,Golden Globe nomination,Golden Globe Award,bridge,0.0,0.6666666666666666,0.0,0.4727503168567807,,False,False
@@ -4702,7 +4702,7 @@ bm25@5,5a76e11c5542994aec3b7192,"[1, 5, 6, 7, 8]",True,669,Hanford Site,Hanford 
 bm25@5,5ae7f7d85542994a481bbe52,"[0, 1, 5, 7, 8]",True,699,War Is the Answer,War Is the Answer,bridge,1.0,1.0,1.0,0.5199175824175823,1.0,False,False
 bm25@5,5a7a629a5542994f819ef1ca,"[0, 2, 3, 4, 5]",True,862,Senegal,Senegal national football team,bridge,0.0,0.4,0.0,0.45095541401273886,,False,False
 bm25@5,5a8c57b5554299240d9c2132,"[0, 1, 3, 4, 6]",True,631,2017,2017,bridge,1.0,1.0,1.0,0.5949935815147624,1.0,False,False
-bm25@5,5ae7ecd5554299540e5a56a0,"[0, 1, 3, 6, 9]",False,460,Las Vegas,Enterprise,bridge,0.0,0.0,1.0,0.4905869324473976,0.0,False,True
+bm25@5,5ae7ecd5554299540e5a56a0,"[0, 1, 3, 6, 9]",False,460,Reno,Enterprise,bridge,0.0,0.0,1.0,0.4905869324473976,0.0,False,True
 bm25@5,5a83c2e45542992ef85e235a,"[2, 3, 5, 6, 9]",True,764,no,Walt Disney Productions,comparison,0.0,0.0,0.0,0.48862115127175365,,False,False
 bm25@5,5ab4031a55429976abd1bd2e,"[2, 3, 4, 5, 9]",True,634,Łukasz Fabiański,Łukasz Fabiański,bridge,1.0,1.0,1.0,0.4685666387259011,1.0,False,False
 bm25@5,5adff8d155429942ec259baf,"[3, 5, 6, 8, 9]",False,857,Marduk,Marduk,bridge,1.0,1.0,1.0,0.3599701269604182,1.0,False,False
@@ -4716,7 +4716,7 @@ bm25@5,5ae4a3975542995ad6573dec,"[0, 2, 5, 7, 9]",True,490,no,Life as We Know It
 bm25@5,5a8b499355429949d91db52d,"[0, 3, 5, 7, 8]",True,559,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.43306288032454365,,False,False
 bm25@5,5ac3fd0755429919431738ee,"[1, 4, 5, 6, 8]",True,667,"""American Lion: Andrew Jackson in the White House""",American Lion,bridge,0.0,0.4444444444444445,0.0,0.4809338521400778,,False,False
 bm25@5,5add12c45542994ed6169c60,"[0, 1, 2, 3, 6]",False,464,no,Ubeda Gym,bridge,0.0,0.0,1.0,0.5181723779854621,0.0,False,True
-bm25@5,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3, 4]",True,673,"Ahmedabad, Gujarat, India","Ahmedabad, Gujarat, India",bridge,1.0,1.0,1.0,0.0,1.0,False,False
+bm25@5,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3, 4]",True,673,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.0,,False,False
 bm25@5,5ab29649554299194fa93413,"[0, 1, 2, 5, 6]",False,816,no,Daniel Day-Lewis,bridge,0.0,0.0,1.0,0.6458333333333333,0.0,False,True
 bm25@5,5a7a572155429941d65f25c0,"[1, 2, 4, 5, 9]",True,678,Ball,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.5188076650106459,,False,False
 bm25@5,5abbb6e25542996606241724,"[1, 2, 3, 4, 8]",True,896,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.4523227383863081,1.0,False,False
@@ -4880,7 +4880,7 @@ minilm@5,5aba65cc55429939ce03dcd3,"[2, 4, 7, 8, 9]",True,785,Navier,Claude-Louis
 minilm@5,5adebdce554299728e26c7ae,"[0, 2, 5, 8, 9]",True,826,Atlanta,"Hoffman Estates, Illinois",bridge,0.0,0.0,0.0,0.42638888888888893,,False,False
 minilm@5,5ab575065542992aa134a320,"[1, 2, 4, 5, 6]",True,718,40,40-room,bridge,0.0,0.0,0.0,0.49860335195530725,,False,False
 minilm@5,5ae1117655429901ffe4ad47,"[1, 3, 4, 7, 8]",True,626,Circus Diablo,Cave In,comparison,0.0,0.0,0.0,0.5120810600155885,,False,False
-minilm@5,5add21ab5542992ae4cec49a,"[1, 3, 5, 8, 9]",True,749,Timothy Carlton and Wanda Ventham,Timothy Carlton and Wanda Ventham,bridge,1.0,1.0,1.0,0.41116352201257866,1.0,False,False
+minilm@5,5add21ab5542992ae4cec49a,"[0, 1, 3, 8, 9]",True,709,Timothy Carlton and Wanda Ventham,Timothy Carlton and Wanda Ventham,bridge,1.0,1.0,1.0,0.4426100628930818,1.0,False,False
 minilm@5,5ac4f05755429924173fb4f1,"[0, 1, 2, 6, 9]",True,807,Las Vegas,"Paradise, Nevada.",bridge,0.0,0.0,0.0,0.614244741873805,,False,False
 minilm@5,5a727c6c5542991f9a20c48f,"[0, 1, 2, 8, 9]",True,695,Chris Hadfield,Chris Hadfield,bridge,1.0,1.0,1.0,0.5397350993377483,1.0,False,False
 minilm@5,5ac080c55542992a796ded2a,"[0, 1, 4, 5, 7]",True,588,The Velveteen Rabbit,The Velveteen Rabbit,comparison,1.0,1.0,0.0,0.5933609958506224,,True,False
@@ -4950,7 +4950,7 @@ minilm@5,5a905cda55429933b8a204f3,"[0, 1, 7, 8, 9]",True,501,no,The Truth Beneat
 minilm@5,5a8f902e55429918e830d266,"[1, 4, 5, 8, 9]",True,515,Abbey Lee,Industry Icon,bridge,0.0,0.0,0.0,0.3780193236714976,,False,False
 minilm@5,5a8ec7b855429917b4a5bdc3,"[1, 4, 5, 6, 7]",True,694,Anderson County,Anderson County,bridge,1.0,1.0,0.0,0.4615981380915438,,True,False
 minilm@5,5ab3953f55429969a97a8185,"[1, 4, 5, 6, 9]",True,641,Jamie Chung,Jamie Chung,bridge,1.0,1.0,1.0,0.5073020753266717,1.0,False,False
-minilm@5,5a7b51975542992d025e67f9,"[1, 3, 5, 6, 7]",True,569,Tomorrowland,Walt Disney World Resort,bridge,0.0,0.0,0.0,0.6059556786703602,,False,False
+minilm@5,5a7b51975542992d025e67f9,"[1, 3, 5, 6, 7]",True,569,Delta Dreamflight,Walt Disney World Resort,bridge,0.0,0.0,0.0,0.6059556786703602,,False,False
 minilm@5,5abdca7255429965af743e4b,"[0, 1, 3, 7, 9]",True,508,UFC,Ultimate Fighting Championship,bridge,0.0,0.0,0.0,0.47357512953367875,,False,False
 minilm@5,5a7a9cea5542990198eaf162,"[2, 3, 5, 6, 9]",True,652,Ayn Rand,Ayn Rand,bridge,1.0,1.0,1.0,0.5216434336023478,1.0,False,False
 minilm@5,5abc5c44554299700f9d788a,"[0, 2, 6, 7, 9]",True,872,St Mark's Square,St Mark's Square,bridge,1.0,1.0,1.0,0.4131897711978466,1.0,False,False
@@ -5011,12 +5011,12 @@ minilm@5,5a7a2f575542996a35c17123,"[0, 3, 5, 8, 9]",True,833,1819,1819,bridge,1.
 minilm@5,5ab90a2055429916710eb0ea,"[1, 3, 4, 7, 9]",True,522,Philadelphia,Philadelphia,bridge,1.0,1.0,1.0,0.5080113100848256,1.0,False,False
 minilm@5,5abf652f5542997ec76fd3ee,"[0, 5, 6, 7, 8]",True,654,1989,"November 8, 1989",bridge,0.0,0.5,0.0,0.45042016806722684,,False,False
 minilm@5,5a773ef055429966f1a36ccc,"[0, 1, 3, 8, 9]",True,599,Jeff Tedford,Fresno State Bulldogs,bridge,0.0,0.0,0.0,0.5760792639773531,,False,False
-minilm@5,5ab840d455429934fafe6d3a,"[0, 1, 2, 3, 6]",True,596,no,"W. L. Gore & Associates, Inc.",bridge,0.0,0.0,0.0,0.5193548387096774,,False,False
+minilm@5,5ab840d455429934fafe6d3a,"[0, 1, 3, 6, 8]",True,591,no,"W. L. Gore & Associates, Inc.",bridge,0.0,0.0,0.0,0.5233870967741936,,False,False
 minilm@5,5ae4a3975542995ad6573dec,"[0, 2, 6, 7, 8]",True,495,no,Life as We Know It,bridge,0.0,0.0,1.0,0.56,0.0,False,True
 minilm@5,5a8b499355429949d91db52d,"[1, 3, 4, 5, 7]",True,552,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.4401622718052738,,False,False
 minilm@5,5ac3fd0755429919431738ee,"[1, 2, 5, 7, 8]",True,663,"""American Lion: Andrew Jackson in the White House""",American Lion,bridge,0.0,0.4444444444444445,0.0,0.48404669260700384,,False,False
 minilm@5,5add12c45542994ed6169c60,"[0, 1, 3, 5, 9]",True,512,Ubeda Gym,Ubeda Gym,bridge,1.0,1.0,1.0,0.4683281412253375,1.0,False,False
-minilm@5,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3, 4]",True,673,"Ahmedabad, Gujarat, India","Ahmedabad, Gujarat, India",bridge,1.0,1.0,1.0,0.0,1.0,False,False
+minilm@5,5a7ba8ef554299294a54aa6f,"[0, 1, 2, 3, 4]",True,673,Ahmedabad,"Ahmedabad, Gujarat, India",bridge,0.0,0.5,0.0,0.0,,False,False
 minilm@5,5ab29649554299194fa93413,"[0, 2, 5, 7, 8]",True,910,no,Daniel Day-Lewis,bridge,0.0,0.0,1.0,0.6050347222222222,0.0,False,True
 minilm@5,5a7a572155429941d65f25c0,"[1, 2, 4, 7, 9]",True,563,Ball,"Lucius, William, Edmund, Frank, and George",bridge,0.0,0.0,0.0,0.6004258339247693,,False,False
 minilm@5,5abbb6e25542996606241724,"[1, 2, 3, 4, 7]",True,637,Wendy's,Wendy's,bridge,1.0,1.0,1.0,0.6106356968215159,1.0,False,False
@@ -5037,10 +5037,10 @@ minilm@5,5adcb2fc554299473435376f,"[0, 1, 3, 4, 9]",True,800,Héctor Marcano Mar
 minilm@5,5a7b72e15542997c3ec97187,"[0, 6, 7, 8, 9]",True,785,Dionne Warwick (United Nations Food and Agriculture Organization),the Food and Agriculture Organization,bridge,0.0,0.6666666666666666,0.0,0.48592010478061554,,False,False
 minilm@5,5abe7c515542993f32c2a128,"[0, 1, 2, 6, 7]",True,1115,no,"43,000 marchers",bridge,0.0,0.0,0.0,0.3959913326110509,,False,False
 minilm@5,5a8007b45542992bc0c4a686,"[0, 3, 4, 8, 9]",True,1055,Nizhny Novgorod Oblast,Volga Federal District,bridge,0.0,0.0,0.0,0.25336164189667376,,False,False
-minilm@5,5a81bcc05542990a1d231e86,"[0, 5, 6, 8, 9]",True,675,Mark van Bommel,Mark van Bommel,bridge,1.0,1.0,1.0,0.5746691871455576,1.0,False,False
+minilm@5,5a81bcc05542990a1d231e86,"[0, 3, 5, 6, 9]",True,889,Mark van Bommel,Mark van Bommel,bridge,1.0,1.0,1.0,0.43982356647763077,1.0,False,False
 minilm@5,5a7f288055429934daa2fd09,"[1, 2, 3, 5, 7]",True,648,Lewis Taylor,Kedar Massenburg,bridge,0.0,0.0,0.0,0.5588835942818244,,False,False
 minilm@5,5a75db325542994ccc91863e,"[1, 2, 3, 5, 9]",True,558,Manchester United F.C,Manchester United Football Club,bridge,0.0,0.5714285714285715,0.0,0.5251063829787235,,False,False
-minilm@5,5a78f0b255429970f5fffde6,"[0, 1, 2, 4, 8]",True,670,Joanne Rowling,Joanne Rowling,bridge,1.0,1.0,1.0,0.3920145190562614,1.0,False,False
+minilm@5,5a78f0b255429970f5fffde6,"[0, 1, 2, 3, 8]",True,699,Joanne Rowling,Joanne Rowling,bridge,1.0,1.0,1.0,0.3656987295825771,1.0,False,False
 minilm@5,5ae7f131554299540e5a56c8,"[0, 1, 4, 6, 7]",True,797,Jamba!,Jamba!,bridge,1.0,1.0,1.0,0.40743494423791826,1.0,False,False
 minilm@5,5a7f10ea55429934daa2fcbc,"[0, 1, 4, 5, 6]",True,532,D. H. Lawrence,David Herbert Lawrence,comparison,0.0,0.3333333333333333,0.0,0.5726907630522089,,False,False
 minilm@5,5ade865f55429975fa854eec,"[3, 4, 5, 8, 9]",False,800,"January 3, 1950","January 3, 1950",bridge,1.0,1.0,0.0,0.5316159250585479,,True,False
