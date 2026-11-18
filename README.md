@@ -11,9 +11,9 @@ NLP (CS6120) project. Long prompts are expensive and mostly noise. We trained a 
 | 3–4 | **Whole dataset** (train + validation, 97,852 questions), **80/20 train/test split by question** with a 5% dev set held out of train, expanded into paragraph pairs |
 | 5 | Baseline: TF-IDF + logistic regression |
 | 6 | Export 250 random questions to Excel for manual review |
-| 7 | BM25 ranking on the whole dataset |
+| 7 | BM25 ranking, scored on the test questions and on the whole dataset |
 | 8 | Fine-tune the `cross-encoder/ms-marco-MiniLM-L-6-v2` cross-encoder, compare all models, compression demo |
-| 9 | **End-to-end answer test:** a local LLM (`SmolLM3-3B`) answers 300 test questions from full, oracle, random, BM25 and MiniLM-compressed prompts (k = 1–5), scored with Exact Match / F1 against tokens saved |
+| 9 | **End-to-end answer test:** a local LLM (`SmolLM3-3B`) answers 300 test questions from full, oracle, random, BM25 and MiniLM-compressed prompts (k = 1–5), scored with Exact Match / F1 against tokens saved, with McNemar significance tests |
 | 10 | **Experiment report:** every setting, metric and timing → `results/experiments.csv`; only the best MiniLM model is kept |
 
 Everything is in [`relevance_classifier.ipynb`](relevance_classifier.ipynb). [`run_experiments.py`](run_experiments.py) runs the whole notebook once per hyper-parameter combination.
@@ -43,6 +43,7 @@ We evaluate two things: **(A)** does the relevance model keep the right paragrap
 | **Answer preservation** | Of the questions the full prompt got right, the share still right after compression. |
 | **Fixed / broken** | Questions compression turned wrong → right and right → wrong. |
 | **Tokens per correct answer** | Prompt tokens ÷ correct answers. Lower is better. |
+| **p-value / 95% CI** | McNemar's test on the same questions: how likely an EM difference is just luck, and the range the real change probably lies in. |
 
 A good compressor shows **high token reduction with high answer preservation and few broken answers**.
 
@@ -81,7 +82,7 @@ Two question types matter throughout:
 ### Baselines (Sections 5, 7)
 
 - **TF-IDF + logistic regression:** element-wise product of question and paragraph TF-IDF vectors (uni/bigrams, fitted on train only) plus cosine similarity, `class_weight="balanced"`. Word overlap only.
-- **BM25:** unsupervised (`k1 = 1.5`, `b = 0.75`), IDF computed across the whole dataset.
+- **BM25:** unsupervised (`k1 = 1.5`, `b = 0.75`), IDF computed across the whole dataset. Scored on the test questions like the other models, and on the whole dataset as a check.
 
 ### Manual review sheet (Section 6)
 
@@ -93,7 +94,7 @@ We fine-tuned `cross-encoder/ms-marco-MiniLM-L-6-v2`: already trained for query�
 
 1. **Zero-shot evaluation** to measure how much MS MARCO transfers on its own.
 2. **Fine-tuning** on ~740k pairs: weighted BCE (`pos_weight` ≈ 4), AdamW (default LR 2e-5), 10% warm-up then linear decay, gradient clipping, bf16 + TF32. About 10–20 min per epoch on an RTX 5070 Ti. The model is saved to `models/minilm-run-<RUN_NAME>/`; if that folder exists, training is skipped.
-3. **Comparison** against TF-IDF (same test set) and BM25 (whole dataset), plus the dev score used for model selection.
+3. **Comparison** against TF-IDF and BM25 on the same test set, plus the dev score used for model selection.
 4. **Compression demo** on one real prompt.
 
 For ranking evaluation, we score all 10 paragraphs, keep the top *k* by score, and check whether **both** gold paragraphs survived. *k* is the compression dial: k = 2 keeps 20% of the context, k = 3 keeps 30%, k = 5 keeps 50%.
@@ -157,18 +158,18 @@ Each run produces `experiments/<run>.ipynb`, one row in `results/experiments.csv
 
 ## Results
 
-All numbers come from `results/experiments.csv` unless a note says otherwise. Each sweep run's executed notebook is in `experiments/<run>.ipynb`. The best run, `r5_2epochs`, was later re-run in the main notebook (Python 3.12, transformers 5.17.0), which regenerated every LLM answer. Its current numbers are in [`relevance_classifier.ipynb`](relevance_classifier.ipynb); `experiments/r5_2epochs.ipynb` is the original sweep run. The re-runs reproduced the MiniLM metrics within 0.04 points, but the LLM answers moved by a few questions (see [How reliable are the end-to-end numbers?](#how-reliable-are-the-end-to-end-numbers)). For runs 1–4, the accuracy and compression metrics were computed from their saved answers. Hardware: RTX 5070 Ti (16 GB), Intel Core Ultra 7 265KF, 32 GB RAM.
+All numbers come from `results/experiments.csv` unless a note says otherwise. Each sweep run's executed notebook is in `experiments/<run>.ipynb`. The best run, `r5_2epochs`, was later re-run in the main notebook (Python 3.12, transformers 5.17.0). Its current numbers are in [`relevance_classifier.ipynb`](relevance_classifier.ipynb); `experiments/r5_2epochs.ipynb` is the original sweep run. The re-runs reproduced the MiniLM metrics within 0.04 points, but the LLM answers moved by a few questions (see [How reliable are the end-to-end numbers?](#how-reliable-are-the-end-to-end-numbers)). For runs 1–4, the accuracy and compression metrics were computed from their saved answers. Hardware: RTX 5070 Ti (16 GB), Intel Core Ultra 7 265KF, 32 GB RAM.
 
-### Relevance models (best run `r5_2epochs`; 19,571 test questions, BM25 on all 97,852)
+### Relevance models (19,571 test questions, best run `r5_2epochs`)
 
 | Model | Top-2 | Top-3 | Top-4 | Top-5 | ROC-AUC | Accuracy | Precision | Recall | F1 |
 |---|---|---|---|---|---|---|---|---|---|
 | TF-IDF + LR | 19.1% | 29.4% | 37.8% | 44.9% | 0.642 | 0.658 | 0.306 | 0.555 | 0.395 |
-| BM25 (unsupervised, whole dataset) | 25.6% | 37.1% | 44.8% | 51.0% | 0.666 | – | – | – | – |
+| BM25 (unsupervised) | 25.9% | 37.6% | 45.0% | 51.2% | 0.667 | – | – | – | – |
 | MiniLM zero-shot (MS MARCO only) | 44.3% | 58.1% | 66.3% | 71.8% | 0.813 | 0.725 | 0.404 | 0.776 | 0.531 |
-| **MiniLM fine-tuned** | **89.0%** | **95.5%** | **97.6%** | **98.7%** | **0.989** | **0.957** | **0.866** | **0.928** | **0.896** |
+| **MiniLM fine-tuned** | **89.1%** | **95.5%** | **97.6%** | **98.7%** | **0.989** | **0.957** | **0.866** | **0.928** | **0.896** |
 
-*Top-k = share of questions with both gold paragraphs in the top-k of 10. Classification metrics are for the relevant class at p ≥ 0.5; BM25 has no probability. BM25 needs no training, so the notebook scores it on the whole dataset, which contains the test set. On the test questions alone it gets 25.9% / 37.6% / 45.0% / 51.2% and ROC-AUC 0.667 (a separate check with the notebook's BM25 code, not part of `experiments.csv`), so the comparison holds.*
+*Top-k = share of test questions with both gold paragraphs in the top-k of 10. Classification metrics are for the relevant class at p ≥ 0.5; BM25 has no probability. BM25 needs no training, so Section 7 also scores it on the whole dataset (97,852 questions) as a check: 25.6% / 37.1% / 44.8% / 51.0%, ROC-AUC 0.666.*
 
 - The trivial "all irrelevant" model scores **79.9%** accuracy. TF-IDF and zero-shot MiniLM score below that but are still far more useful (55% and 78% recall vs. 0%). Only the fine-tuned model is strong on every measure.
 - Word-overlap methods plateau because HotpotQA's distractors were picked for word overlap: BM25 keeps all evidence in only half the prompts even at top-5. Our fine-tuned cross-encoder does it in the top-2 for 89% of questions.
@@ -181,16 +182,16 @@ All numbers come from `results/experiments.csv` unless a note says otherwise. Ea
 | `r2_bs16` | 16 | 2e-5 | 1 | 256 | 88.56% | 87.65% | 94.84% | 0.9873 | 0.956 | **0.880** | 0.904 | 0.892 | 0.346 | 17.1 min | 23.9 min |
 | `r3_bs64_lr4e-5` | 64 | 4e-5 | 1 | 256 | 88.58% | 88.18% | 95.07% | 0.9881 | 0.947 | 0.822 | **0.942** | 0.878 | 0.252 | **9.7 min** | **16.6 min** |
 | `r4_len384` | 32 | 2e-5 | 1 | 384 | 87.92% | 87.28% | 94.68% | 0.9867 | 0.949 | 0.838 | 0.925 | 0.879 | 0.270 | 14.6 min | 22.2 min |
-| **`r5_2epochs`** (best) | 32 | 2e-5 | 2 | 256 | **89.25%** | **89.03%** | **95.47%** | **0.9893** | **0.957** | 0.866 | 0.928 | **0.896** | 0.199 | 22.0 min | 34.3 min |
+| **`r5_2epochs`** (best) | 32 | 2e-5 | 2 | 256 | **89.25%** | **89.07%** | **95.48%** | **0.9893** | **0.957** | 0.866 | 0.928 | **0.896** | 0.199 | 52.0 min | 59.3 min |
 
-*`r5_2epochs` shows its latest re-run; its total time includes regenerating all LLM answers (5.4 min).*
+*`r5_2epochs` shows its latest re-run. Its fine-tuning took 52 min, against about 22 min in its earlier runs with the same settings, so its times can't be compared with the other rows. Almost all of its LLM answers came from the cache.*
 
-- **Two epochs win** on dev and on every test ranking metric: +1.9 points top-2 over the baseline (374 more questions whose evidence survives 20% compression). Dev and test agree.
+- **Two epochs win** on dev and on every test ranking metric: +1.9 points top-2 over the baseline (381 more questions whose evidence survives 20% compression). Dev and test agree.
 - `r3` has the highest recall but lowest precision; `r2` is the opposite. `r5` balances both best.
 - `r3` (batch 64, LR 4e-5) is the best one-epoch setting and the fastest run.
 - `MAX_LENGTH = 384` adds time but no gain; almost every pair fits in 256 tokens.
-- Peak VRAM: 1.6–2.3 GiB training, 8.3–8.5 GiB generating (cap 13.7 GiB). No spills or OOMs.
-- The answer cache cut later runs' generation from 5.3 min to 10–20 s.
+- Peak VRAM: 1.6–2.3 GiB training, up to 8.5 GiB generating (cap 13.7 GiB). No spills or OOMs.
+- The answer cache cut later runs' generation from 5.3 min to under 20 s.
 
 ### End-to-end answer accuracy (`r5_2epochs`, SmolLM3-3B, 300 test questions)
 
@@ -206,41 +207,41 @@ All numbers come from `results/experiments.csv` unless a note says otherwise. Ea
 | **`minilm@2`** | 321 | 76% | **89.7%** | **55.3%** | **66.8%** | **113%** | **81%** | **47 / 28** | **581** |
 | `random@3` | 501 | 64% | 6.0% | 23.7% | 27.3% | 48% | 38% | 15 / 91 | 2,115 |
 | `bm25@3` | 420 | 69% | 38.7% | 36.7% | 44.4% | 75% | 59% | 23 / 60 | 1,146 |
-| **`minilm@3`** | 451 | 67% | **95.7%** | **55.7%** | **67.5%** | **114%** | **84%** | 44 / 24 | **810** |
+| **`minilm@3`** | 452 | 67% | **95.7%** | **55.3%** | **67.1%** | **113%** | **83%** | 44 / 25 | **816** |
 | `random@4` | 632 | 55% | 12.7% | 26.3% | 33.6% | 54% | 46% | 12 / 80 | 2,402 |
 | `bm25@4` | 538 | 61% | 44.7% | 37.3% | 45.3% | 76% | 63% | 20 / 55 | 1,442 |
-| **`minilm@4`** | 583 | 58% | **98.3%** | **51.7%** | **63.7%** | **105%** | **86%** | 29 / 21 | **1,129** |
+| **`minilm@4`** | 583 | 58% | **98.3%** | **51.7%** | **63.8%** | **105%** | **86%** | 29 / 21 | **1,128** |
 | `random@5` | 763 | 46% | 21.0% | 30.7% | 38.7% | 63% | 51% | 17 / 72 | 2,487 |
 | `bm25@5` | 662 | 52% | 52.3% | 39.7% | 48.0% | 81% | 67% | 20 / 48 | 1,670 |
-| **`minilm@5`** | 716 | 49% | **98.3%** | **54.7%** | **65.1%** | **112%** | **92%** | 29 / 12 | **1,310** |
+| **`minilm@5`** | 715 | 49% | **98.3%** | **54.7%** | **65.1%** | **112%** | **92%** | 29 / 12 | **1,308** |
 
 ![Accuracy vs prompt size](results/runs/r5_2epochs_accuracy_vs_tokens.png)
 
 - **MiniLM top-2 removes 76% of the prompt** (1,419 → 321 tokens) and keeps **81% of the full prompt's correct answers**, while fixing 47 and breaking 28. EM rises from 49.0% to 55.3%, 3 points below the oracle. That gain is only borderline significant (see below).
 - **5× cheaper per correct answer:** 581 tokens with `minilm@2` vs. 2,897 with the full prompt (BM25: 831, random: 1,802).
-- **Not all lost answers are compression's fault.** Even the oracle preserves only 85%. Of the 24 answers `minilm@3` lost, 96% still had all gold paragraphs. So the evidence was there, and the errors came from how the reader LLM answered or from strict EM scoring (e.g. "Housman" for "A. E. Housman").
+- **Not all lost answers are compression's fault.** Even the oracle preserves only 85%. Of the 25 answers `minilm@3` lost, 92% still had all gold paragraphs. So the evidence was there, and the errors came from how the reader LLM answered or from strict EM scoring (e.g. "Housman" for "A. E. Housman").
 - **k = 2–3 is the sweet spot:** the best EM, at close to the lowest cost per correct answer (k = 1 is slightly cheaper per correct answer, but its EM is 10 points below the full prompt). Answer preservation climbs from 63% (k = 1) to 92% (k = 5), but EM does not improve beyond k = 3.
 - **BM25 loses accuracy** because it drops a gold paragraph in 76% of questions at k = 2. Random is far worse.
 - **LLM-accuracy differences between runs are noise:** `minilm@2` scores 54.7–55.3% EM across all five runs, and runs 1–4 share most of their answers through the cache. The relevance metrics on 19,571 questions are what separate them.
 
 ### How reliable are the end-to-end numbers?
 
-**Run-to-run noise.** The same 300 full prompts were answered three times: in the sweep (r1's answers, reused through the cache), in a re-run on Nov 3, and in the current re-run. Full-prompt EM came out at 48.0%, 49.3% and 49.0%. The prompts were identical. The answers changed because batched bf16 generation is not *batch-invariant*: a prompt's answer can depend on which other prompts share its batch, and that changes whenever MiniLM is retrained or the cache is cleared. Between the first two runs (same software), 79 of the 3,600 answers that don't depend on MiniLM changed. So read any single EM number as ±1–1.5 points. The earlier answer files are in git history (commits `0257ff5` and `051fd7d`).
+**Run-to-run noise.** The same 300 full prompts were answered three times: in the sweep (r1's answers, reused through the cache), in a re-run on Nov 3, and in a re-run on Nov 12 (the current run reuses those answers through the cache). Full-prompt EM came out at 48.0%, 49.3% and 49.0%. The prompts were identical. The answers changed because batched bf16 generation is not *batch-invariant*: a prompt's answer can depend on which other prompts share its batch, and that changes whenever MiniLM is retrained or the cache is cleared. Between the first two runs (same software), 79 of the 3,600 answers that don't depend on MiniLM changed. So read any single EM number as ±1–1.5 points. The earlier answer files are in git history (commits `0257ff5` and `051fd7d`).
 
-**Significance.** McNemar's exact test on the 300 questions in `results/runs/r5_2epochs_answers.csv`. It compares two conditions on the same questions and only counts the questions where they disagree. Wins / losses = questions that only the first / only the second condition got right.
+**Significance.** Section 9 runs McNemar's exact test on the 300 questions; every value is also saved in `experiments.csv`. It compares two conditions on the same questions and only counts the questions where they disagree. Wins / losses = questions that only the first / only the second condition got right. `p (Holm)` corrects for testing five values of k.
 
-| Comparison | Wins / losses | EM change | p-value | 95% CI of the change |
-|---|---|---|---|---|
-| `minilm@1` vs `full` | 24 / 55 | −10.3 pts | 0.0006 | −16.0 to −4.6 |
-| `minilm@2` vs `full` | 47 / 28 | +6.3 pts | 0.037 | +0.7 to +11.9 |
-| `minilm@3` vs `full` | 44 / 24 | +6.7 pts | 0.021 | +1.3 to +12.0 |
-| `minilm@4` vs `full` | 29 / 21 | +2.7 pts | 0.32 | −1.9 to +7.3 |
-| `minilm@5` vs `full` | 29 / 12 | +5.7 pts | 0.012 | +1.5 to +9.8 |
-| `minilm@2` vs `bm25@2` | 61 / 8 | +17.7 pts | < 0.001 | +12.6 to +22.7 |
+| Comparison | Wins / losses | EM change | p-value | p (Holm) | 95% CI of the change |
+|---|---|---|---|---|---|
+| `minilm@1` vs `full` | 24 / 55 | −10.3 pts | 0.0006 | 0.003 | −16.0 to −4.6 |
+| `minilm@2` vs `full` | 47 / 28 | +6.3 pts | 0.037 | 0.089 | +0.7 to +11.9 |
+| `minilm@3` vs `full` | 44 / 25 | +6.3 pts | 0.030 | 0.089 | +1.0 to +11.7 |
+| `minilm@4` vs `full` | 29 / 21 | +2.7 pts | 0.32 | 0.32 | −1.9 to +7.3 |
+| `minilm@5` vs `full` | 29 / 12 | +5.7 pts | 0.012 | 0.046 | +1.5 to +9.8 |
+| `minilm@2` vs `bm25@2` | 61 / 8 | +17.7 pts | < 0.001 | < 0.001 | +12.6 to +22.7 |
 
-- **MiniLM clearly beats BM25** at every k (p < 0.01).
-- **"Compression beats the full prompt" is only borderline.** At k = 2 the p-value was 0.019, 0.050 and 0.037 in the three runs. After correcting for testing five values of k (Holm), only k = 5 stays significantly better than the full prompt.
-- **More questions would settle it.** With 300 questions the confidence interval is about ±5.7 points; 1,000 questions would narrow it to about ±3 points.
+- **MiniLM clearly beats BM25** at every k (p < 0.01, also after the Holm correction).
+- **"Compression beats the full prompt" is only borderline.** At k = 2 the p-value was 0.019 in the sweep, 0.050 in the Nov 3 re-run and 0.037 now. After the Holm correction, only k = 5 stays significantly better than the full prompt, and k = 1 is significantly worse.
+- **More questions would settle it.** With 300 questions the confidence interval is about ±5.6 points; 1,000 questions would narrow it to about ±3 points.
 
 ### Run 0: original configuration with Qwen3-4B
 

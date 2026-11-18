@@ -3028,7 +3028,7 @@ minilm@3,5ab3fa095542992ade7c6f0a,"[1, 3, 9]",True,789,79 AD,79 AD,bridge,1.0,1.
 minilm@3,5ac00acd554299012d1db584,"[0, 2, 3]",True,450,Dutch,Dutch,bridge,1.0,1.0,0.0,0.5770676691729324,,True,False
 minilm@3,5ac170fd55429964131be1fe,"[1, 3, 9]",True,439,"[2] Paris, France","Paris, France",bridge,0.0,0.8,1.0,0.7298461538461538,0.0,False,True
 minilm@3,5a7cf6d7554299683c1c63f4,"[0, 4, 6]",True,435,2004,2004,bridge,1.0,1.0,1.0,0.6681922196796339,1.0,False,False
-minilm@3,5ab7ceb555429928e1fe3917,"[6, 8, 9]",True,457,no,magazine,comparison,0.0,0.0,0.0,0.7863487611033193,,False,False
+minilm@3,5ab7ceb555429928e1fe3917,"[2, 6, 9]",True,412,no,magazine,comparison,0.0,0.0,0.0,0.8073866292660121,,False,False
 minilm@3,5ae1dc6c5542997283cd22a5,"[2, 6, 7]",True,406,Sonny Seiler,Sonny Seiler,bridge,1.0,1.0,1.0,0.7262306136210384,1.0,False,False
 minilm@3,5a80899e554299485f598646,"[1, 7, 8]",True,329,1997,1 July 1997,bridge,0.0,0.5,0.0,0.7294407894736843,,False,False
 minilm@3,5a73f9485542993e948e87a6,"[4, 5, 6]",True,368,no,2016,bridge,0.0,0.0,0.0,0.6025917926565875,,False,False
@@ -3115,7 +3115,7 @@ minilm@3,5a8871c955429938390d3f68,"[0, 1, 6]",True,377,Bianca Gascoigne,Bianca G
 minilm@3,5a80cc7555429938b61421ed,"[1, 4, 6]",True,379,No,no,comparison,1.0,1.0,0.0,0.7799070847851336,,True,False
 minilm@3,5a8dcde355429941ae14e061,"[1, 6, 7]",True,284,Young adult high fantasy,fantasy,bridge,0.0,0.4,1.0,0.7468805704099821,0.0,False,True
 minilm@3,5a82a27555429940e5e1a901,"[3, 5, 7]",True,417,"August 6, 1990","August 6, 1990",bridge,1.0,1.0,1.0,0.719758064516129,1.0,False,False
-minilm@3,5a878e705542993e715abfa1,"[0, 8, 9]",False,393,Pakistani,Pakistani,bridge,1.0,1.0,1.0,0.7133479212253829,1.0,False,False
+minilm@3,5a878e705542993e715abfa1,"[0, 2, 8]",False,490,no,Pakistani,bridge,0.0,0.0,1.0,0.6425966447848286,0.0,False,True
 minilm@3,5a9000ee5542995651fb50a0,"[2, 5, 6]",True,576,Pete's Tavern on Irving Place in New York City,at Pete's Tavern on Irving Place in New York City,bridge,0.0,0.9473684210526316,0.0,0.6464088397790055,,False,False
 minilm@3,5aba37f155429955dce3ede2,"[1, 4, 9]",True,546,Yes,author,comparison,0.0,0.0,0.0,0.696329254727475,,False,False
 minilm@3,5a7269485542992359bc308a,"[1, 4, 5]",True,455,"""Live and Let Die""","""Live and Let Die""",bridge,1.0,1.0,1.0,0.6276595744680851,1.0,False,False
@@ -3142,7 +3142,7 @@ minilm@3,5a89b1bf5542992e4fca8377,"[4, 5, 6]",True,420,Erase Errata,Erase Errata
 minilm@3,5ac3037855429921a00ab0d8,"[0, 4, 7]",True,468,7800,7800,bridge,1.0,1.0,1.0,0.5333998005982055,1.0,False,False
 minilm@3,5a777e3855429949eeb29e7e,"[0, 3, 8]",True,567,Massive Attack,Violent Femmes,comparison,0.0,0.0,0.0,0.7069767441860465,,False,False
 minilm@3,5a7fb04d55429969796c1b24,"[3, 6, 8]",True,594,Orlando,Orlando,bridge,1.0,1.0,1.0,0.7440758293838863,1.0,False,False
-minilm@3,5adce2d45542992c1e3a2460,"[1, 5, 7]",True,477,St. Louis,"St. Louis, Missouri",bridge,0.0,0.8,0.0,0.658554044380816,,False,False
+minilm@3,5adce2d45542992c1e3a2460,"[1, 4, 7]",True,532,St. Louis,"St. Louis, Missouri",bridge,0.0,0.8,0.0,0.6191839656406586,,False,False
 minilm@3,5ae76d565542997ec2727642,"[0, 4, 9]",True,449,Rio,Rio,bridge,1.0,1.0,1.0,0.6739288307915758,1.0,False,False
 minilm@3,5abd4f6c5542992ac4f38246,"[0, 4, 5]",False,444,Tanveer Khan,"Amit Saxena,",bridge,0.0,0.0,0.0,0.7302551640340218,,False,False
 minilm@3,5ab2bd58554299545a2cfa47,"[1, 7, 9]",True,429,No,no,comparison,1.0,1.0,1.0,0.6671838634600465,1.0,False,False
@@ -4169,14 +4169,14 @@ minilm@4,5ac23d545542994d76dccefd,"[1, 5, 6, 8]",True,575,India,India,bridge,1.0
 minilm@4,5abc8a0e554299114383a143,"[0, 2, 4, 6]",True,1046,Rose,Jalen Rose,bridge,0.0,0.6666666666666666,1.0,0.4255903349807798,0.0,False,True
 minilm@4,5a8681ef5542996432c571ce,"[0, 7, 8, 9]",True,566,Pennsylvania,Pennsylvania,bridge,1.0,1.0,1.0,0.6101928374655647,1.0,False,False
 minilm@4,5ade649355429939a52fe899,"[0, 2, 3, 6]",True,538,"Anda, Heilongjiang",Anda,comparison,0.0,0.6666666666666666,0.0,0.6184397163120567,,False,False
-minilm@4,5add2c6c5542994ed6169cab,"[1, 4, 7, 9]",True,732,Marv Albert,Marv Albert,bridge,1.0,1.0,1.0,0.575159605339524,1.0,False,False
+minilm@4,5add2c6c5542994ed6169cab,"[1, 4, 6, 9]",True,673,Marv Albert,Marv Albert,bridge,1.0,1.0,1.0,0.6094022054556008,1.0,False,False
 minilm@4,5a80c44f554299260e20a14a,"[0, 2, 4, 7]",True,537,George Miller,George Miller,bridge,1.0,1.0,1.0,0.5998509687034277,1.0,False,False
 minilm@4,5a78cfe255429974737f78b1,"[2, 4, 8, 9]",True,543,Solange,Solange Piaget Knowles,bridge,0.0,0.5,0.0,0.6489980607627667,,False,False
-minilm@4,5a8a2dda554299515336135b,"[1, 3, 4, 7]",True,659,Jun Ji-hyun stars in The Berlin File with Jun,Ha Jung-woo,bridge,0.0,0.0,0.0,0.5458304617505169,,False,False
+minilm@4,5a8a2dda554299515336135b,"[3, 4, 7, 8]",True,650,Jun Ji-hyun stars in The Berlin File with Ha Jung-woo,Ha Jung-woo,bridge,0.0,0.3636363636363636,0.0,0.5520330806340454,,False,False
 minilm@4,5abc2cfc554299114383a0f2,"[0, 1, 6, 7]",True,566,Chokwe Antar Lumumba,Chokwe Lumumba,bridge,0.0,0.8,0.0,0.606671299513551,,False,False
 minilm@4,5ac2bcc2554299218029db0b,"[0, 1, 4, 7]",True,516,John Eisenhower served as a United States Army officer,United States Army officer and military historian,bridge,0.0,0.5333333333333333,0.0,0.7416124186279419,,False,False
 minilm@4,5ade12d455429939a52fe7ed,"[0, 4, 6, 9]",True,639,Big Bang,Big Bang,bridge,1.0,1.0,1.0,0.6584714056654195,1.0,False,False
-minilm@4,5adc418655429944faac249a,"[0, 2, 8, 9]",True,1049,Lord Baltimore (1579–1632),George Calvert,bridge,0.0,0.0,0.0,0.5183654729109275,,False,False
+minilm@4,5adc418655429944faac249a,"[0, 7, 8, 9]",True,912,Lord Baltimore (1579–1632),George Calvert,bridge,0.0,0.0,0.0,0.581267217630854,,False,False
 minilm@4,5ae6903a5542996d980e7c02,"[1, 4, 6, 7]",True,867,University of Connecticut,Bellaire High School,bridge,0.0,0.0,0.0,0.5034364261168385,,False,False
 minilm@4,5a73df825542993a88ae2e7e,"[0, 7, 8, 9]",True,791,"Virginia, Minnesota","Virginia, Minnesota.",bridge,1.0,1.0,1.0,0.5551181102362205,1.0,False,False
 minilm@4,5aba591b554299232ef4a29c,"[3, 5, 7, 9]",True,531,Blood Diner,Siesta,bridge,0.0,0.0,0.0,0.5861262665627436,,False,False
@@ -4880,7 +4880,7 @@ minilm@5,5aba65cc55429939ce03dcd3,"[2, 4, 7, 8, 9]",True,785,Navier,Claude-Louis
 minilm@5,5adebdce554299728e26c7ae,"[0, 2, 5, 8, 9]",True,826,Atlanta,"Hoffman Estates, Illinois",bridge,0.0,0.0,0.0,0.42638888888888893,,False,False
 minilm@5,5ab575065542992aa134a320,"[1, 2, 4, 5, 6]",True,718,40,40-room,bridge,0.0,0.0,0.0,0.49860335195530725,,False,False
 minilm@5,5ae1117655429901ffe4ad47,"[1, 3, 4, 7, 8]",True,626,Circus Diablo,Cave In,comparison,0.0,0.0,0.0,0.5120810600155885,,False,False
-minilm@5,5add21ab5542992ae4cec49a,"[0, 1, 3, 8, 9]",True,709,Timothy Carlton and Wanda Ventham,Timothy Carlton and Wanda Ventham,bridge,1.0,1.0,1.0,0.4426100628930818,1.0,False,False
+minilm@5,5add21ab5542992ae4cec49a,"[1, 3, 5, 8, 9]",True,749,Timothy Carlton and Wanda Ventham,Timothy Carlton and Wanda Ventham,bridge,1.0,1.0,1.0,0.41116352201257866,1.0,False,False
 minilm@5,5ac4f05755429924173fb4f1,"[0, 1, 2, 6, 9]",True,807,Las Vegas,"Paradise, Nevada.",bridge,0.0,0.0,0.0,0.614244741873805,,False,False
 minilm@5,5a727c6c5542991f9a20c48f,"[0, 1, 2, 8, 9]",True,695,Chris Hadfield,Chris Hadfield,bridge,1.0,1.0,1.0,0.5397350993377483,1.0,False,False
 minilm@5,5ac080c55542992a796ded2a,"[0, 1, 4, 5, 7]",True,588,The Velveteen Rabbit,The Velveteen Rabbit,comparison,1.0,1.0,0.0,0.5933609958506224,,True,False
@@ -5011,7 +5011,7 @@ minilm@5,5a7a2f575542996a35c17123,"[0, 3, 5, 8, 9]",True,833,1819,1819,bridge,1.
 minilm@5,5ab90a2055429916710eb0ea,"[1, 3, 4, 7, 9]",True,522,Philadelphia,Philadelphia,bridge,1.0,1.0,1.0,0.5080113100848256,1.0,False,False
 minilm@5,5abf652f5542997ec76fd3ee,"[0, 5, 6, 7, 8]",True,654,1989,"November 8, 1989",bridge,0.0,0.5,0.0,0.45042016806722684,,False,False
 minilm@5,5a773ef055429966f1a36ccc,"[0, 1, 3, 8, 9]",True,599,Jeff Tedford,Fresno State Bulldogs,bridge,0.0,0.0,0.0,0.5760792639773531,,False,False
-minilm@5,5ab840d455429934fafe6d3a,"[0, 1, 3, 6, 8]",True,591,no,"W. L. Gore & Associates, Inc.",bridge,0.0,0.0,0.0,0.5233870967741936,,False,False
+minilm@5,5ab840d455429934fafe6d3a,"[0, 1, 2, 3, 6]",True,596,no,"W. L. Gore & Associates, Inc.",bridge,0.0,0.0,0.0,0.5193548387096774,,False,False
 minilm@5,5ae4a3975542995ad6573dec,"[0, 2, 6, 7, 8]",True,495,no,Life as We Know It,bridge,0.0,0.0,1.0,0.56,0.0,False,True
 minilm@5,5a8b499355429949d91db52d,"[1, 3, 4, 5, 7]",True,552,Wolff,Michael Wolff,bridge,0.0,0.6666666666666666,0.0,0.4401622718052738,,False,False
 minilm@5,5ac3fd0755429919431738ee,"[1, 2, 5, 7, 8]",True,663,"""American Lion: Andrew Jackson in the White House""",American Lion,bridge,0.0,0.4444444444444445,0.0,0.48404669260700384,,False,False
@@ -5037,7 +5037,7 @@ minilm@5,5adcb2fc554299473435376f,"[0, 1, 3, 4, 9]",True,800,Héctor Marcano Mar
 minilm@5,5a7b72e15542997c3ec97187,"[0, 6, 7, 8, 9]",True,785,Dionne Warwick (United Nations Food and Agriculture Organization),the Food and Agriculture Organization,bridge,0.0,0.6666666666666666,0.0,0.48592010478061554,,False,False
 minilm@5,5abe7c515542993f32c2a128,"[0, 1, 2, 6, 7]",True,1115,no,"43,000 marchers",bridge,0.0,0.0,0.0,0.3959913326110509,,False,False
 minilm@5,5a8007b45542992bc0c4a686,"[0, 3, 4, 8, 9]",True,1055,Nizhny Novgorod Oblast,Volga Federal District,bridge,0.0,0.0,0.0,0.25336164189667376,,False,False
-minilm@5,5a81bcc05542990a1d231e86,"[0, 3, 5, 6, 9]",True,889,Mark van Bommel,Mark van Bommel,bridge,1.0,1.0,1.0,0.43982356647763077,1.0,False,False
+minilm@5,5a81bcc05542990a1d231e86,"[0, 5, 6, 8, 9]",True,675,Mark van Bommel,Mark van Bommel,bridge,1.0,1.0,1.0,0.5746691871455576,1.0,False,False
 minilm@5,5a7f288055429934daa2fd09,"[1, 2, 3, 5, 7]",True,648,Lewis Taylor,Kedar Massenburg,bridge,0.0,0.0,0.0,0.5588835942818244,,False,False
 minilm@5,5a75db325542994ccc91863e,"[1, 2, 3, 5, 9]",True,558,Manchester United F.C,Manchester United Football Club,bridge,0.0,0.5714285714285715,0.0,0.5251063829787235,,False,False
 minilm@5,5a78f0b255429970f5fffde6,"[0, 1, 2, 3, 8]",True,699,Joanne Rowling,Joanne Rowling,bridge,1.0,1.0,1.0,0.3656987295825771,1.0,False,False
@@ -5076,7 +5076,7 @@ minilm@5,5a8a2dda554299515336135b,"[1, 3, 4, 7, 8]",True,760,Jun Ji-hyun stars i
 minilm@5,5abc2cfc554299114383a0f2,"[0, 1, 4, 6, 7]",True,790,Chokwe Antar Lumumba,Chokwe Lumumba,bridge,0.0,0.8,0.0,0.4510076441973593,,False,False
 minilm@5,5ac2bcc2554299218029db0b,"[0, 1, 4, 7, 8]",True,675,Deputy Surgeon General of the Army,United States Army officer and military historian,bridge,0.0,0.16666666666666666,0.0,0.6619929894842264,,False,False
 minilm@5,5ade12d455429939a52fe7ed,"[0, 3, 4, 6, 9]",True,1009,Big Bang,Big Bang,bridge,1.0,1.0,1.0,0.4607161945483699,1.0,False,False
-minilm@5,5adc418655429944faac249a,"[0, 2, 6, 8, 9]",True,1279,Lord Baltimore (1579–1632),George Calvert,bridge,0.0,0.0,0.0,0.4127640036730946,,False,False
+minilm@5,5adc418655429944faac249a,"[0, 6, 7, 8, 9]",True,1142,Lord Baltimore (1579–1632),George Calvert,bridge,0.0,0.0,0.0,0.4756657483930211,,False,False
 minilm@5,5ae6903a5542996d980e7c02,"[0, 1, 4, 6, 7]",True,968,University of Connecticut,Bellaire High School,bridge,0.0,0.0,0.0,0.4455899198167239,,False,False
 minilm@5,5a73df825542993a88ae2e7e,"[0, 4, 7, 8, 9]",True,952,"Virginia, Minnesota","Virginia, Minnesota.",bridge,1.0,1.0,1.0,0.4645669291338582,1.0,False,False
 minilm@5,5aba591b554299232ef4a29c,"[3, 5, 7, 8, 9]",True,685,Apocalypse Now,Siesta,bridge,0.0,0.0,0.0,0.4660950896336711,,False,False
