@@ -21,6 +21,10 @@ RUNS = {
     "r3_bs64_lr4e-5": dict(TRAIN_BATCH_SIZE=64, LEARNING_RATE=4e-5, EPOCHS=1, MAX_LENGTH=256),
     "r4_len384":      dict(TRAIN_BATCH_SIZE=32, LEARNING_RATE=2e-5, EPOCHS=1, MAX_LENGTH=384),
     "r5_2epochs":     dict(TRAIN_BATCH_SIZE=32, LEARNING_RATE=2e-5, EPOCHS=2, MAX_LENGTH=256),
+    # Second answering LLM: reuses r5's MiniLM (not retrained), so only the reader changes. Qwen3-4B needs
+    # more VRAM per token than SmolLM3, so it runs under a hard 12 GB limit with smaller generation batches.
+    "r6_qwen3_4b":    dict(TRAIN_BATCH_SIZE=32, LEARNING_RATE=2e-5, EPOCHS=2, MAX_LENGTH=256, TRAIN_MINILM=False,
+                           LLM_NAME="Qwen/Qwen3-4B-Instruct-2507", GPU_MAX_GB=12.0, GEN_MAX_BATCH_TOKENS=4096),
 }
 
 ROOT = Path(__file__).resolve().parent

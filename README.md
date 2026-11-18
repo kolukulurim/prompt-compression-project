@@ -13,7 +13,7 @@ NLP (CS6120) project. Long prompts are expensive and mostly noise. We trained a 
 | 6 | Export 250 random questions to Excel for manual review |
 | 7 | BM25 ranking, scored on the test questions and on the whole dataset |
 | 8 | Fine-tune the `cross-encoder/ms-marco-MiniLM-L-6-v2` cross-encoder, compare all models, compression demo |
-| 9 | **End-to-end answer test:** a local LLM (`SmolLM3-3B`) answers 300 test questions from full, oracle, random, BM25 and MiniLM-compressed prompts (k = 1–5), scored with Exact Match / F1 against tokens saved, with McNemar significance tests |
+| 9 | **End-to-end answer test:** a local LLM (`SmolLM3-3B`) answers 300 test questions from full, oracle, random, BM25 and MiniLM-compressed prompts (k = 1–5), scored with Exact Match / F1 against tokens saved, with McNemar significance tests. Run `r6_qwen3_4b` repeats it with `Qwen3-4B` as the reader |
 | 10 | **Experiment report:** every setting, metric and timing → `results/experiments.csv`; only the best MiniLM model is kept |
 
 Everything is in [`relevance_classifier.ipynb`](relevance_classifier.ipynb). [`run_experiments.py`](run_experiments.py) runs the whole notebook once per hyper-parameter combination.
@@ -93,7 +93,7 @@ Two question types matter throughout:
 We fine-tuned `cross-encoder/ms-marco-MiniLM-L-6-v2`: already trained for query–passage relevance on MS MARCO, small (6 layers, ~22M params) and fast at inference, which matters because a compressor scores every chunk of every prompt.
 
 1. **Zero-shot evaluation** to measure how much MS MARCO transfers on its own.
-2. **Fine-tuning** on ~740k pairs: weighted BCE (`pos_weight` ≈ 4), AdamW (default LR 2e-5), 10% warm-up then linear decay, gradient clipping, bf16 + TF32. About 10–20 min per epoch on an RTX 5070 Ti. The model is saved to `models/minilm-run-<RUN_NAME>/`; if that folder exists, training is skipped.
+2. **Fine-tuning** on ~740k pairs: weighted BCE (`pos_weight` ≈ 4), AdamW (default LR 2e-5), 10% warm-up then linear decay, gradient clipping, bf16 + TF32. About 10–20 min per epoch on an RTX 5070 Ti. The model is saved to `models/minilm-run-<RUN_NAME>/`; if that folder exists, training is skipped. With `TRAIN_MINILM = False` a run reuses the saved best model instead of training.
 3. **Comparison** against TF-IDF and BM25 on the same test set, plus the dev score used for model selection.
 4. **Compression demo** on one real prompt.
 
@@ -113,7 +113,7 @@ For ranking evaluation, we score all 10 paragraphs, keep the top *k* by score, a
 
 Each `@k` runs at k = 1–5: 17 conditions × 300 = 5,100 answers per run.
 
-**Answering LLM.** `HuggingFaceTB/SmolLM3-3B`, local, bf16 (~6 GB VRAM), greedy decoding, thinking mode off, and `/system_override` to keep the date out of the prompt. We switched from `Qwen/Qwen3-4B-Instruct-2507` (run 0) because it left too little VRAM for batching on a 16 GB card.
+**Answering LLM.** `HuggingFaceTB/SmolLM3-3B`, local, bf16 (~6 GB VRAM), greedy decoding, thinking mode off, and `/system_override` to keep the date out of the prompt. We switched from `Qwen/Qwen3-4B-Instruct-2507` (run 0) because it ran out of memory on a 16 GB card. With the memory fixes below it now runs as a second reader (`r6_qwen3_4b`, see Results).
 
 **Prompt wording.** SmolLM3 took our original instruction too literally and answered "yes"/"no" to 168 of 300 non-yes/no questions. We A/B tested three versions:
 
@@ -126,9 +126,9 @@ Each `@k` runs at k = 1–5: 17 conditions × 300 = 5,100 answers per run.
 *These numbers come from the A/B runs, so they differ slightly from the final results below. The A/B test used the same 300 test questions as the results, so the wording was picked on test data. It should be repeated on dev questions.*
 
 **GPU memory.** Run 0 crashed with CUDA OOM on the longest prompts after Windows started spilling VRAM into system RAM. We fixed it with:
-- **Token-budget batching:** a batch closes at `GEN_BATCH_SIZE` (16) prompts or `GEN_MAX_BATCH_TOKENS` (16,384) tokens, whichever comes first.
-- **A hard VRAM cap:** free VRAM at start-up minus `GPU_HEADROOM_GB` (1 GB).
-- **Automatic retry:** an OOM batch is split in half and retried.
+- **Token-budget batching:** a batch closes at `GEN_BATCH_SIZE` (16) prompts or `GEN_MAX_BATCH_TOKENS` (16,384; 4,096 for Qwen3-4B) tokens, whichever comes first.
+- **A hard VRAM cap:** free VRAM at start-up minus `GPU_HEADROOM_GB` (1 GB), or `GPU_MAX_GB` if that is lower (12 GB for Qwen3-4B). PyTorch never allocates beyond the cap, so VRAM can't spill into system RAM.
+- **Automatic retry:** an OOM batch is split in half and retried; the number of splits is saved in the report.
 
 **Caching.** Answers are cached in `results/e2e_cache_<model>.jsonl`, keyed by a hash of the prompt plus the model and generation settings. Prompts shared across runs are generated once; `minilm@k` prompts regenerate only when the kept paragraphs change. Interrupted runs resume. The settings include the `transformers` version, so changing library versions regenerates every answer.
 
@@ -145,12 +145,13 @@ Each `@k` runs at k = 1–5: 17 conditions × 300 = 5,100 answers per run.
 | `r3_bs64_lr4e-5` | 64 | 4e-5 | 1 | 256 |
 | `r4_len384` | 32 | 2e-5 | 1 | 384 |
 | `r5_2epochs` | 32 | 2e-5 | 2 | 256 |
+| `r6_qwen3_4b` | 32 | 2e-5 | 2 | 256 (r5's model, not retrained) |
 
-All runs share the same split, `N_EVAL_QUESTIONS = 300`, `K_VALUES = [1, 2, 3, 4, 5]`, `GEN_BATCH_SIZE = 16` and SmolLM3-3B.
+All runs share the same split, `N_EVAL_QUESTIONS = 300`, `K_VALUES = [1, 2, 3, 4, 5]` and `GEN_BATCH_SIZE = 16`. Runs 1–5 use SmolLM3-3B. `r6_qwen3_4b` does not train: it reuses r5's MiniLM (`TRAIN_MINILM = False`) and swaps the reader for `Qwen/Qwen3-4B-Instruct-2507`, under a hard 12 GB VRAM limit (`GPU_MAX_GB = 12`) with `GEN_MAX_BATCH_TOKENS = 4096`.
 
 Each run produces `experiments/<run>.ipynb`, one row in `results/experiments.csv` (settings, all metrics, `⏱` timings, peak VRAM), and `results/runs/<run>_answers.csv` + `<run>_accuracy_vs_tokens.png`.
 
-**Model selection:** each run's MiniLM is compared with the best so far on **dev** top-2 (tracked in `models/minilm-hotpotqa-best/best_run.json`). The winner is kept and the rest deleted. Test never influences selection.
+**Model selection:** each run's MiniLM is compared with the best so far on **dev** top-2 (tracked in `models/minilm-hotpotqa-best/best_run.json`). The winner is kept and the rest deleted. Test never influences selection. `r6_qwen3_4b` reuses the best model and takes no part in the selection.
 
 **Next step: GSM8K.** Everything after the evaluation-set cell only depends on questions, chunks, gold positions and scores, so we plan to reuse it with few-shot worked examples as the chunks and a numeric-answer metric.
 
@@ -158,7 +159,7 @@ Each run produces `experiments/<run>.ipynb`, one row in `results/experiments.csv
 
 ## Results
 
-All numbers come from `results/experiments.csv` unless a note says otherwise. Each sweep run's executed notebook is in `experiments/<run>.ipynb`. The best run, `r5_2epochs`, was later re-run in the main notebook (Python 3.12, transformers 5.17.0). Its current numbers are in [`relevance_classifier.ipynb`](relevance_classifier.ipynb); `experiments/r5_2epochs.ipynb` is the original sweep run. The re-runs reproduced the MiniLM metrics within 0.04 points, but the LLM answers moved by a few questions (see [How reliable are the end-to-end numbers?](#how-reliable-are-the-end-to-end-numbers)). For runs 1–4, the accuracy and compression metrics were computed from their saved answers. Hardware: RTX 5070 Ti (16 GB), Intel Core Ultra 7 265KF, 32 GB RAM.
+All numbers come from `results/experiments.csv` unless a note says otherwise. Each run's executed notebook is in `experiments/<run>.ipynb`. The best run, `r5_2epochs`, was later re-run in the main notebook (Python 3.12, transformers 5.17.0). Its current numbers are in [`relevance_classifier.ipynb`](relevance_classifier.ipynb); `experiments/r5_2epochs.ipynb` is the original sweep run. The re-runs reproduced the MiniLM metrics within 0.04 points, but the LLM answers moved by a few questions (see [How reliable are the end-to-end numbers?](#how-reliable-are-the-end-to-end-numbers)). For runs 1–4, the accuracy and compression metrics were computed from their saved answers. Hardware: RTX 5070 Ti (16 GB), Intel Core Ultra 7 265KF, 32 GB RAM.
 
 ### Relevance models (19,571 test questions, best run `r5_2epochs`)
 
@@ -222,7 +223,7 @@ All numbers come from `results/experiments.csv` unless a note says otherwise. Ea
 - **Not all lost answers are compression's fault.** Even the oracle preserves only 85%. Of the 25 answers `minilm@3` lost, 92% still had all gold paragraphs. So the evidence was there, and the errors came from how the reader LLM answered or from strict EM scoring (e.g. "Housman" for "A. E. Housman").
 - **k = 2–3 is the sweet spot:** the best EM, at close to the lowest cost per correct answer (k = 1 is slightly cheaper per correct answer, but its EM is 10 points below the full prompt). Answer preservation climbs from 63% (k = 1) to 92% (k = 5), but EM does not improve beyond k = 3.
 - **BM25 loses accuracy** because it drops a gold paragraph in 76% of questions at k = 2. Random is far worse.
-- **LLM-accuracy differences between runs are noise:** `minilm@2` scores 54.7–55.3% EM across all five runs, and runs 1–4 share most of their answers through the cache. The relevance metrics on 19,571 questions are what separate them.
+- **LLM-accuracy differences between runs are noise:** `minilm@2` scores 54.7–55.3% EM across all five SmolLM3 runs, and runs 1–4 share most of their answers through the cache. The relevance metrics on 19,571 questions are what separate them.
 
 ### How reliable are the end-to-end numbers?
 
@@ -243,9 +244,44 @@ All numbers come from `results/experiments.csv` unless a note says otherwise. Ea
 - **"Compression beats the full prompt" is only borderline.** At k = 2 the p-value was 0.019 in the sweep, 0.050 in the Nov 3 re-run and 0.037 now. After the Holm correction, only k = 5 stays significantly better than the full prompt, and k = 1 is significantly worse.
 - **More questions would settle it.** With 300 questions the confidence interval is about ±5.6 points; 1,000 questions would narrow it to about ±3 points.
 
+### Second reader: Qwen3-4B (`r6_qwen3_4b`, 300 test questions)
+
+Same 300 questions, same prompts and the same MiniLM model as `r5_2epochs`; only the answering LLM changes, to `Qwen/Qwen3-4B-Instruct-2507`. It ran under a hard 12 GB VRAM limit with 4,096-token batches: peak 10.6 GB, no batch ran out of memory, and 4,446 prompts took 9.1 min. Prompt token counts are a little higher than in the SmolLM3 table because the chat templates differ.
+
+| Condition | Avg prompt tokens | Token reduction | EM (SmolLM3-3B) | EM (Qwen3-4B) | F1 (Qwen3-4B) | Answer preservation | Fixed / broken | Tokens per correct answer |
+|---|---|---|---|---|---|---|---|---|
+| `full` (10 paragraphs) | 1,479 | 0% | 49.0% | 69.3% | 78.3% | 100% | – | 2,133 |
+| `oracle` (2 gold paragraphs) | 329 | 77% | 58.3% | 78.7% | 87.4% | 98% | 32 / 4 | 418 |
+| `random@2` | 382 | 73% | 20.7% | 20.7% | 24.6% | 28% | 4 / 150 | 1,848 |
+| `bm25@2` | 320 | 77% | 37.7% | 45.7% | 53.3% | 62% | 8 / 79 | 700 |
+| **`minilm@1`** | 216 | 85% | 38.7% | 45.3% | 53.5% | 58% | 16 / 88 | 476 |
+| **`minilm@2`** | 329 | 77% | 55.3% | **73.7%** | **82.5%** | **95%** | 24 / 11 | **446** |
+| **`minilm@3`** | 465 | 67% | 55.3% | 72.7% | 81.7% | 95% | 21 / 11 | 641 |
+| **`minilm@4`** | 603 | 58% | 51.7% | 74.0% | 81.9% | 96% | 23 / 9 | 814 |
+| **`minilm@5`** | 741 | 49% | 54.7% | 70.3% | 79.7% | 95% | 13 / 10 | 1,054 |
+
+*Answer preservation and fixed / broken compare Qwen3-4B with its own full prompt. All 17 conditions are in `experiments/r6_qwen3_4b.ipynb` and `results/runs/r6_qwen3_4b_answers.csv`.*
+
+McNemar's test (Section 9 of the r6 notebook):
+
+| Comparison | Wins / losses | EM change | p-value | p (Holm) | 95% CI of the change |
+|---|---|---|---|---|---|
+| `minilm@1` vs `full` | 16 / 88 | −24.0 pts | < 0.001 | < 0.001 | −30.1 to −17.9 |
+| `minilm@2` vs `full` | 24 / 11 | +4.3 pts | 0.041 | 0.12 | +0.5 to +8.2 |
+| `minilm@3` vs `full` | 21 / 11 | +3.3 pts | 0.11 | 0.22 | −0.3 to +7.0 |
+| `minilm@4` vs `full` | 23 / 9 | +4.7 pts | 0.020 | 0.080 | +1.0 to +8.3 |
+| `minilm@5` vs `full` | 13 / 10 | +1.0 pts | 0.68 | 0.68 | −2.1 to +4.1 |
+| `minilm@2` vs `bm25@2` | 89 / 5 | +28.0 pts | < 0.001 | < 0.001 | +22.5 to +33.5 |
+
+- **Qwen3-4B is a much stronger reader:** full-prompt EM 69.3% vs 49.0% for SmolLM3, and 78.7% vs 58.3% with only the gold paragraphs.
+- **Compression keeps the accuracy with the stronger reader too.** MiniLM top-2 removes 77% of the prompt and keeps 95% of the correct answers (24 fixed, 11 broken), with EM 73.7% vs 69.3%. Before the correction k = 2 and k = 4 look slightly better (p = 0.041 and 0.020), but after the Holm correction no k ≥ 2 differs significantly from the full prompt. The safe claim is "no loss of accuracy at about a quarter of the tokens". Only k = 1 is clearly worse (−24 points).
+- **The SmolLM3 gain is smaller here.** With SmolLM3, compression scored above the full prompt; with Qwen3-4B the gain is smaller and not significant. This fits the idea that a weaker reader is more easily distracted by extra paragraphs, but this experiment alone doesn't prove it.
+- **MiniLM beats BM25 by even more:** +19 to +28 EM points at k = 2–5 (p < 0.01 at every k after Holm). BM25 at k = 2 still drops a gold paragraph in 76% of questions, and the stronger reader can't make up for that.
+- **4.8× cheaper per correct answer:** 446 tokens with `minilm@2` vs 2,133 with the full prompt.
+
 ### Run 0: original configuration with Qwen3-4B
 
-Our first GPU run used a 30% sample (75/25 split), 1 epoch on 20,350 questions, `Qwen/Qwen3-4B-Instruct-2507` as the reader, 500 questions and k = 2, 3, 5. It hit CUDA OOM after 5,472 of 5,500 answers, which led to the batching and VRAM fixes above. Answers are in `results/e2e_hotpotqa_Qwen3-4B-Instruct-2507.jsonl`.
+Our first GPU run used a 30% sample (75/25 split), 1 epoch on 20,350 questions, `Qwen/Qwen3-4B-Instruct-2507` as the reader, 500 questions and k = 2, 3, 5. It hit CUDA OOM after 5,472 of 5,500 answers, which led to the batching and VRAM fixes above. Its raw answers were not kept, so the table below is the only record of this run; `r6_qwen3_4b` above repeats it on the current setup.
 
 | Condition | Answers | Avg prompt tokens | All gold kept | EM | F1 |
 |---|---|---|---|---|---|
@@ -271,15 +307,16 @@ py -3.14 -m venv .venv
 
 **Single run:** open the notebook and Run All. Section 1 should print `CUDA: True` and the GPU name.
 
-**Full sweep** (5 runs, ~3–4 h on an RTX 5070 Ti):
+**Full sweep** (5 sweep runs + `r6_qwen3_4b`, ~3–4 h on an RTX 5070 Ti):
 
 ```bash
-.venv\Scripts\python run_experiments.py            # all runs; finished runs are skipped
-.venv\Scripts\python run_experiments.py r4_len384  # a single run
+.venv\Scripts\python run_experiments.py              # all runs; finished runs are skipped
+.venv\Scripts\python run_experiments.py r4_len384    # a single run
+.venv\Scripts\python run_experiments.py r6_qwen3_4b  # second reader; needs r5's saved model, so run it after r5
 ```
 
 - Sections 1–8 fall back to CPU without a GPU, but that's too slow for the whole dataset; lower `SAMPLE_FRAC` / `TRAIN_FRAC`.
-- Section 9 needs a CUDA GPU (~6 GB model download, 5–15 min per run). If memory is tight, lower `GEN_MAX_BATCH_TOKENS`.
+- Section 9 needs a CUDA GPU (~6 GB model download for SmolLM3, ~8 GB for Qwen3-4B; 5–15 min per run). If memory is tight, lower `GEN_MAX_BATCH_TOKENS`.
 - Delete `results/e2e_cache_*.jsonl` to force all answers to regenerate.
 - To redo the sweep from scratch, delete `results/experiments.csv` and `models/minilm-hotpotqa-best/`.
 
@@ -287,10 +324,10 @@ py -3.14 -m venv .venv
 
 ```
 relevance_classifier.ipynb            main notebook (Sections 0–10)
-run_experiments.py                    runs the notebook once per hyper-parameter combination (papermill)
+run_experiments.py                    runs the notebook once per run setting (papermill)
 data/hotpotqa_250_manual_review.xlsx  250-question sheet for manual notes (never overwritten by the notebook)
 requirements.txt
-experiments/                          executed notebook of every sweep run
+experiments/                          executed notebook of every run (r1–r6)
 results/experiments.csv               one row per run: settings, metrics, timings, peak VRAM
 results/runs/                         per-run LLM answers and accuracy-vs-tokens plot
 results/e2e_cache_*.jsonl             cached LLM answers (git-ignored)
