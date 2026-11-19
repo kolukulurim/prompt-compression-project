@@ -15,7 +15,7 @@ NLP (CS6120) project. Long prompts are expensive and mostly noise. We train a **
 | 6 | Export 66 random questions to Excel for manual review |
 | 7 | Baseline: BM25 ranking |
 | 8 | Fine-tune the `cross-encoder/ms-marco-MiniLM-L-6-v2` cross-encoder, compare all models, compression demo |
-| 9 | **End-to-end test:** a local LLM (`SmolLM3-3B`) answers 300 test questions from full, oracle, random, BM25 and MiniLM prompts (k = 1–5). Exact Match / F1 against tokens saved, with McNemar significance tests |
+| 9 | **End-to-end test:** a local LLM (`SmolLM3-3B`) answers 1,300 test questions from full, oracle, random, BM25 and MiniLM prompts (k = 1–5). Exact Match / F1 against tokens saved, with McNemar significance tests |
 | 9b | The same tests on the dev questions |
 | 10 | **Report:** every setting, metric and timing → `results/experiments.csv`; only the best MiniLM is kept |
 
@@ -96,7 +96,7 @@ Ranking is evaluated by keeping the top *k* of 10 paragraphs and checking that *
 
 ### End-to-end answer test (Sections 9, 9b)
 
-"All gold in top-k" is a proxy, so we also check whether the answer is still right. For 300 test questions, and again for 300 dev questions, the **same LLM gets the same instruction** with different contexts:
+"All gold in top-k" is a proxy, so we also check whether the answer is still right. For 1,300 test questions, and again for 1,300 dev questions (`N_EVAL_QUESTIONS`), the **same LLM gets the same instruction** with different contexts. The results below still come from the earlier 300-question setting.
 
 | Condition | Context | Purpose |
 |---|---|---|
@@ -106,7 +106,7 @@ Ranking is evaluated by keeping the top *k* of 10 paragraphs and checking that *
 | `bm25@k` | BM25's top k | word-overlap baseline |
 | `minilm@k` | MiniLM's top k | **our model** |
 
-Each `@k` runs at k = 1–5: 17 conditions × 300 questions = 5,100 answers per question set.
+Each `@k` runs at k = 1–5: 17 conditions × 1,300 questions = 22,100 answers per question set. 1,300 questions narrow the 95% CI of an EM difference from about ±5.6 points (300 questions) to about ±2.7.
 
 **Answering LLM.** `HuggingFaceTB/SmolLM3-3B`, local, bf16 (~6 GB VRAM), greedy decoding, thinking mode off, and `/system_override` to keep the date out of the prompt. It replaced `Qwen/Qwen3-4B-Instruct-2507` (run 0), which ran out of memory on a 16 GB card. With the memory fixes below, Qwen3-4B now runs as a second reader (`r6_qwen3_4b`).
 
@@ -139,11 +139,11 @@ Each `@k` runs at k = 1–5: 17 conditions × 300 questions = 5,100 answers per 
 | `r2_bs16` | 16 | 2e-5 | 3 | 256 | to run |
 | `r3_bs64_lr4e-5` | 64 | 4e-5 | 3 | 256 | to run |
 | `r4_len384` | 32 | 2e-5 | 3 | 384 | to run |
-| `r5_4epochs` | 32 | 2e-5 | 4 | 256 | **done** |
+| `r5_4epochs` | 32 | 2e-5 | 4 | 256 | **done** with 300 questions; re-run with 1,300 |
 | `r7_bs64_lr3e-5_3ep` | 64 | 3e-5 | 3 | 256 (warm-up 15%) | to run |
 | `r6_qwen3_4b` | best run's MiniLM, reader `Qwen3-4B-Instruct-2507` | | | | to run, last |
 
-All runs share the same split, 300 evaluation questions, k = 1–5 and SmolLM3-3B as the reader, except `r6_qwen3_4b`. That run does not train: it reuses the best MiniLM (`TRAIN_MINILM = False`) and only swaps the reader, under a 12 GB VRAM limit.
+All runs share the same split, 1,300 evaluation questions per set, k = 1–5 and SmolLM3-3B as the reader, except `r6_qwen3_4b`. That run does not train: it reuses the best MiniLM (`TRAIN_MINILM = False`) and only swaps the reader, under a 12 GB VRAM limit.
 
 Each run writes `experiments/<run>.ipynb`, one row in `results/experiments.csv`, and `results/runs/<run>_answers.csv`, `<run>_dev_answers.csv` and `<run>_accuracy_vs_tokens.png`.
 
@@ -155,7 +155,7 @@ Each run writes `experiments/<run>.ipynb`, one row in `results/experiments.csv`,
 
 ## Results
 
-All numbers come from `results/experiments.csv` (run `r5_4epochs`) unless a note says otherwise. Only `r5_4epochs` of the new sweep has run so far. It ran in the main notebook (Python 3.12.10, transformers 5.17.0), so its outputs are in [`relevance_classifier.ipynb`](relevance_classifier.ipynb). Results of the previous sweep are kept further down. Hardware: RTX 5070 Ti (16 GB), Intel Core Ultra 7 265KF, 32 GB RAM.
+All numbers come from `results/experiments.csv` (run `r5_4epochs`) unless a note says otherwise. Only `r5_4epochs` of the new sweep has run so far, with 300 evaluation questions per set (the notebook is now set to 1,300). It ran in the main notebook (Python 3.12.10, transformers 5.17.0), so its outputs are in [`relevance_classifier.ipynb`](relevance_classifier.ipynb). Results of the previous sweep are kept further down. Hardware: RTX 5070 Ti (16 GB), Intel Core Ultra 7 265KF, 32 GB RAM.
 
 ### Relevance models (19,571 test questions)
 
@@ -278,7 +278,7 @@ Section 9 runs McNemar's exact test on the same questions; every value is also s
 
 - **MiniLM clearly beats BM25** at every k ≥ 2, on test and on dev (p < 0.001 after Holm).
 - **Compression keeps accuracy, but doesn't improve it.** After the Holm correction no k ≥ 2 differs significantly from the full prompt, on test or dev (95% CI at k = 2: +0.8 to +11.9 points on test, −3.1 to +7.8 on dev). The safe claim is **the same accuracy at about a quarter of the tokens**. Only k = 1 is significantly worse.
-- **More questions would settle it.** With 300 questions the CI is about ±5.6 points; 1,000 questions would narrow it to about ±3.
+- **More questions would settle it.** With 300 questions the CI is about ±5.6 points. The notebook now uses 1,300 questions per set, which narrows it to about ±2.7.
 
 **Run-to-run noise.** Batched bf16 generation is not *batch-invariant*: a prompt's answer can depend on the other prompts in its batch, which change whenever MiniLM is retrained or the cache is cleared. Three runs of the same 300 full prompts gave EM 48.0%, 49.3% and 49.0%, so read a single EM number as ±1–1.5 points. In `r5_4epochs`, 4,790 of the 5,100 test answers came from the cache of earlier runs; all dev answers were new.
 
@@ -332,7 +332,7 @@ py -3.14 -m venv .venv
 
 **Single run:** open the notebook and Run All. Section 1 should print `CUDA: True` and the GPU name.
 
-**Full sweep** (6 MiniLM runs + `r6_qwen3_4b`, about 5–6 h on an RTX 5070 Ti):
+**Full sweep** (6 MiniLM runs + `r6_qwen3_4b`; roughly 7–8 h on an RTX 5070 Ti with 1,300 questions per set, most of it new answers in the first SmolLM3 run and in the Qwen3-4B run):
 
 ```bash
 .venv\Scripts\python run_experiments.py              # every run; runs already in results/experiments.csv are skipped
@@ -341,6 +341,7 @@ py -3.14 -m venv .venv
 ```
 
 - To continue the current sweep, run it **without** `--fresh`; `--fresh` would move the `r5_4epochs` results to a backup. `r6_qwen3_4b` runs last and reuses the best saved MiniLM.
+- `r5_4epochs` is already in `results/experiments.csv` with 300 questions, so the script skips it. To redo it with 1,300, open the main notebook and Run All: it retrains the model and replaces its row.
 - Sections 1–8 fall back to the CPU without a GPU, but that is too slow for the whole dataset; lower `SAMPLE_FRAC` / `TRAIN_FRAC`.
 - Section 9 needs a CUDA GPU (~6 GB download for SmolLM3, ~8 GB for Qwen3-4B). If memory is tight, lower `GEN_MAX_BATCH_TOKENS`.
 - Delete `results/e2e_cache_*.jsonl` to force every answer to regenerate.

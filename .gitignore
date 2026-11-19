@@ -56,3 +56,6 @@ desktop.ini
 
 # Excel lock files created while a workbook is open
 ~$*.xlsx
+
+# ---- Local only (not shared yet) ----
+project_overview.pdf
